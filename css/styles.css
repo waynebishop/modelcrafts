@@ -5,33 +5,59 @@ body {
 
 nav {
   background-color: #eb2000;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 0;
 }
 nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding-left: 0px;
   margin-top: 0;
+  margin-bottom: 0px;
 }
 nav ul li {
-  display: inline;
-  margin-top: 0;
+  float: left;
+  width: 50%;
+  min-width: 150px;
 }
 nav ul li a {
-  text-decoration: none;
+  text-align: center;
   font-size: 16px;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
   color: #fff;
-  line-height: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  text-decoration: none;
+  transition: all 0.5s;
+  box: border-box;
+}
+nav ul li a:hover {
+  background-color: #b81900;
 }
 
 #banner {
   height: 150px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 0;
   background: url("../img/carbon-fibre.png") repeat;
 }
 #banner h1 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: newyork;
-  color: #fff;
+  font-style: italic;
   text-align: center;
   padding-top: 30px;
+}
+#banner h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+#banner h1 a:hover {
+  color: rgba(235, 32, 0, 0.5);
 }
 
 #categories {
@@ -62,6 +88,10 @@ nav ul li a {
   text-decoration: none;
   border: 1px solid #666;
   transition: all 0.5s;
+}
+#categories ul li a:hover {
+  color: #eb2000;
+  border: 1px solid #eb2000;
 }
 
 #categories ul li a {
