@@ -1,12 +1,13 @@
 @import 'colors';
+@import 'mixins';
 
 $brandColor1: #eb2000;
+$brandColor2: #00a7d2;
 
 body {
 	font-family: Helvetica, Arial;
 	margin: 0;
 }
-
 
 nav {
 	background-color: $brandColor1;
@@ -27,7 +28,11 @@ nav {
 			width: 50%;
 			min-width: 150px;
 
-		
+			@include bp-tablet {
+				// background-color: $brandColor2;
+				width: 25%;
+			}
+
 			a {
 			text-align: center;
 			font-size: 16px;
@@ -38,7 +43,7 @@ nav {
 			text-decoration: none;
 			transition: all 0.5s;
 			box: border-box;
-			
+
 				&:hover {
 					background-color: darken($brandColor1, 10%);
 				}	
@@ -54,7 +59,7 @@ nav {
 	margin: 0 auto;
 	padding-left: 0;
 	background: url("../img/carbon-fibre.png") repeat;
-		
+
 	h1 {
 		font-size: 30px;
 		font-family: newyork;
@@ -62,22 +67,40 @@ nav {
 		text-align: center;
 		padding-top: 30px;
 
+			@include bp-tablet {
+				text-align: left;
+				padding-top: 60px;
+				padding-left: 20px;
+					
+		}
+
 		a {
 			color: #fff;
 			text-decoration: none;
+			transition: all 0.5s;
 
 			&:hover {
-				color: transparentize($brandColor1, .5);
+				color: transparentize(lighten($brandColor2, 20%), .5);
 			}
 		}
+	}
+
+	#search {
+		display: inline-block;
+		padding-left: calc(50% - 95px);
+
+		@include bp-tablet {
+				text-align: left;
+				padding-top: 60px;
+				padding-left: 20px;
+		}
+
 	}
 }
 
 #categories {
-	// background-color: $brandColor1;
-	// height: 40px;
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1284px;
 	margin: 0 auto;
 	padding-left: 0;
 
@@ -87,13 +110,23 @@ nav {
 		padding-left: 0px;
 		margin-top: 0;
 		margin-bottom: 0px;
+		@include bp-desktop {
+				@include border-radius(3px);
+			}
 
 		li {
 			float: left;
 			width: 50%;
-			min-width: 160px;
+			min-width: 150px;
 
-		
+			@include bp-tablet {
+				width: 25%;
+			}
+			
+			@include bp-desktop {
+				width: 12.5%;
+			}
+
 			a {
 			text-align: center;
 			font-size: 16px;
@@ -105,9 +138,10 @@ nav {
 			border: 1px solid #666;
 			transition: all 0.5s;
 			
+			
 				&:hover {
-				color: $brandColor1;
-				border: 1px solid $brandColor1;
+				color: $brandColor2;
+				border: 1px solid $brandColor2;
 
 				}
 			}
@@ -127,6 +161,7 @@ nav {
 // Pure CSS goes here
 
 #categories ul li a {
+
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+17,666666+19,666666+19,474747+29,2c2c2c+37,000000+57,000000+57,111111+71,1c1c1c+91,2b2b2b+95,131313+100 */
 background: rgb(76,76,76); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 17%, rgba(102,102,102,1) 19%, rgba(102,102,102,1) 19%, rgba(71,71,71,1) 29%, rgba(44,44,44,1) 37%, rgba(0,0,0,1) 57%, rgba(0,0,0,1) 57%, rgba(17,17,17,1) 71%, rgba(28,28,28,1) 91%, rgba(43,43,43,1) 95%, rgba(19,19,19,1) 100%); /* FF3.6-15 */

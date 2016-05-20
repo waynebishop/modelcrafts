@@ -22,6 +22,11 @@ nav ul li {
   width: 50%;
   min-width: 150px;
 }
+@media all and (min-width: 600px) {
+  nav ul li {
+    width: 25%;
+  }
+}
 nav ul li a {
   text-align: center;
   font-size: 16px;
@@ -52,17 +57,36 @@ nav ul li a:hover {
   text-align: center;
   padding-top: 30px;
 }
+@media all and (min-width: 600px) {
+  #banner h1 {
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+}
 #banner h1 a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s;
 }
 #banner h1 a:hover {
-  color: rgba(235, 32, 0, 0.5);
+  color: rgba(57, 214, 255, 0.5);
+}
+#banner #search {
+  display: inline-block;
+  padding-left: calc(50% - 95px);
+}
+@media all and (min-width: 600px) {
+  #banner #search {
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 20px;
+  }
 }
 
 #categories {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1284px;
   margin: 0 auto;
   padding-left: 0;
 }
@@ -73,10 +97,29 @@ nav ul li a:hover {
   margin-top: 0;
   margin-bottom: 0px;
 }
+@media all and (min-width: 1280px) {
+  #categories ul {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+  }
+}
 #categories ul li {
   float: left;
   width: 50%;
-  min-width: 160px;
+  min-width: 150px;
+}
+@media all and (min-width: 600px) {
+  #categories ul li {
+    width: 25%;
+  }
+}
+@media all and (min-width: 1280px) {
+  #categories ul li {
+    width: 12.5%;
+  }
 }
 #categories ul li a {
   text-align: center;
@@ -90,8 +133,8 @@ nav ul li a:hover {
   transition: all 0.5s;
 }
 #categories ul li a:hover {
-  color: #eb2000;
-  border: 1px solid #eb2000;
+  color: #00a7d2;
+  border: 1px solid #00a7d2;
 }
 
 #categories ul li a {
