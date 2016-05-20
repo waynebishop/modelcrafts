@@ -1,0 +1,106 @@
+$brandColor1: #eb2000;
+
+
+
+
+body {
+	font-family: Helvetica, Arial;
+	margin: 0;
+}
+
+
+nav {
+	background-color: $brandColor1;
+
+	ul {
+		margin-top: 0;
+
+		li {
+		display: inline;
+		margin-top: 0;
+		
+			a {
+			text-decoration: none;
+			font-size: 16px;
+			color: #fff;
+			line-height: 40px;
+			padding-left: 30px;
+			padding-right: 30px;
+
+			}
+		}	
+	}
+}
+
+#banner {
+	height: 150px;
+	background: url("../img/carbon-fibre.png") repeat;
+		
+	h1 {
+		font-size: 25px;
+		font-family: newyork;
+		color: #fff;
+		text-align: center;
+		padding-top: 30px;
+	}
+}
+
+#categories {
+	// background-color: $brandColor1;
+	// height: 40px;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-left: 0;
+
+	ul {
+		list-style: none;
+		overflow: hidden;
+		padding-left: 0px;
+		margin-top: 0;
+		margin-bottom: 0px;
+
+		li {
+			float: left;
+			width: 50%;
+			min-width: 160px;
+
+		
+			a {
+			text-align: center;
+			font-size: 16px;
+			padding: 10px 0;
+			display: block;
+			width: 100%;
+			color: #fff;
+			text-decoration: none;
+			border: 1px solid #666;
+			transition: all 0.5s;
+			
+			}
+		}	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+// Pure CSS goes here
+
+#categories ul li a {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+17,666666+19,666666+19,474747+29,2c2c2c+37,000000+57,000000+57,111111+71,1c1c1c+91,2b2b2b+95,131313+100 */
+background: rgb(76,76,76); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 17%, rgba(102,102,102,1) 19%, rgba(102,102,102,1) 19%, rgba(71,71,71,1) 29%, rgba(44,44,44,1) 37%, rgba(0,0,0,1) 57%, rgba(0,0,0,1) 57%, rgba(17,17,17,1) 71%, rgba(28,28,28,1) 91%, rgba(43,43,43,1) 95%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 17%,rgba(102,102,102,1) 19%,rgba(102,102,102,1) 19%,rgba(71,71,71,1) 29%,rgba(44,44,44,1) 37%,rgba(0,0,0,1) 57%,rgba(0,0,0,1) 57%,rgba(17,17,17,1) 71%,rgba(28,28,28,1) 91%,rgba(43,43,43,1) 95%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 17%,rgba(102,102,102,1) 19%,rgba(102,102,102,1) 19%,rgba(71,71,71,1) 29%,rgba(44,44,44,1) 37%,rgba(0,0,0,1) 57%,rgba(0,0,0,1) 57%,rgba(17,17,17,1) 71%,rgba(28,28,28,1) 91%,rgba(43,43,43,1) 95%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+}
+
+
+
