@@ -34,7 +34,7 @@ nav {
 
 			a {
 			text-align: center;
-			font-size: 16px;
+			font-size: 18px;
 			padding: 10px 0;
 			display: block;
 			width: 100%;
@@ -129,7 +129,7 @@ nav {
 
 			a {
 			text-align: center;
-			font-size: 16px;
+			font-size: 18px;
 			padding: 10px 0;
 			display: block;
 			width: 100%;
@@ -179,24 +179,54 @@ footer {
 	background: url("../img/carbon-fibre.png") repeat;
 	position: relative;
 
+	#find-info {
+
+		border-bottom: 2px solid $brandColor2;
+		padding-bottom: 10px;
+
+		&:after {
+		content: "";
+		display: block;
+		clear: both;
+		}
+	}
+
 	#red-head {
 		background-color: $brandColor1;
 		color: #fff;
 		text-align: center;
 		
 		h1 {font-size: 25px;
-		line-height: 30px;
+		line-height: 40px;
 		}
 	}
 
 	#address {
 
+		padding-top: 15px;
+
 		@include bp-tablet {
-			width: 50%;
+			padding-left: calc(25% - 150px);
 		}
 
+		@include bp-desktop {
+			 	width: 33%;
+			 	padding-left: 50px;
+			 	float: left;
+		}
+
+		h2 {
+		font-size: 22px;
+		padding-left: 10px;
+		text-align: center;
+
+			@include bp-tablet {
+				text-align: left;
+				padding-left: 20px;
+			}
+		}	
+
 		p {
-		// padding-left: 10px;
 		margin-top:5px;
 		margin-bottom: 3px;
 		font-size: 20px;
@@ -213,19 +243,39 @@ footer {
 	h2,
 	p {
 		color: #fff;
+
 	}
 
 	#trading-hours {
-		
+
 		padding-bottom: 20px;
 
 		@include bp-tablet {
-			width: 50%;
+			padding-left: calc(25% - 150px);
+		}
+
+		@include bp-desktop {
+			 	width: 33%;
+			 	padding-left: 20px;
+			 	float: left;
 		}
 
 		h2 {
 		font-size: 22px;
 		padding-left: 10px;
+		text-align: center;
+
+			@include bp-tablet {
+				text-align: left;
+				padding-left: 20px;
+			}
+		}	
+
+		p {
+		// padding-left: 10px;
+		margin-top:5px;
+		margin-bottom: 3px;
+		font-size: 20px;
 		text-align: center;
 		
 			@include bp-tablet {
@@ -233,27 +283,10 @@ footer {
 				padding-left: 20px;
 			}
 		}
-
-		ul {
-			list-style: none;
-
-			li { 
-			color: #fff;
-			font-size: 18px;
-			padding-top: 10px;
-			text-align: center;
-
-				@include bp-tablet {
-				text-align: left;
-				padding-left: 20px;
-				}
-			}
-		}
 	}
-
+	
 	#static-map {
 		
-		border-bottom: 2px solid $brandColor2;
 		padding-bottom: 25px;
 
 		img {
@@ -261,13 +294,14 @@ footer {
 			
 			@include bp-tablet {
 				position: absolute;
-				top: 80px;
-				right: 20px;
+				top: 150px;
+				right: calc(25% - 150px);
 			}
-				
-			// @include bp-desktop {
-			// 	width: 12.5%;
-			// }
+
+			@include bp-desktop {
+				top: 95px;
+				right: calc(33% - 350px);
+			}
 		}
 	}
 

@@ -29,7 +29,7 @@ nav ul li {
 }
 nav ul li a {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   padding: 10px 0;
   display: block;
   width: 100%;
@@ -124,7 +124,7 @@ nav ul li a:hover {
 }
 #categories ul li a {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   padding: 10px 0;
   display: block;
   width: 100%;
@@ -156,6 +156,15 @@ footer {
   background: url("../img/carbon-fibre.png") repeat;
   position: relative;
 }
+footer #find-info {
+  border-bottom: 2px solid #00a7d2;
+  padding-bottom: 10px;
+}
+footer #find-info:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 footer #red-head {
   background-color: #eb2000;
   color: #fff;
@@ -163,11 +172,32 @@ footer #red-head {
 }
 footer #red-head h1 {
   font-size: 25px;
-  line-height: 30px;
+  line-height: 40px;
+}
+footer #address {
+  padding-top: 15px;
 }
 @media all and (min-width: 600px) {
   footer #address {
-    width: 50%;
+    padding-left: calc(25% - 150px);
+  }
+}
+@media all and (min-width: 1280px) {
+  footer #address {
+    width: 33%;
+    padding-left: 50px;
+    float: left;
+  }
+}
+footer #address h2 {
+  font-size: 22px;
+  padding-left: 10px;
+  text-align: center;
+}
+@media all and (min-width: 600px) {
+  footer #address h2 {
+    text-align: left;
+    padding-left: 20px;
   }
 }
 footer #address p {
@@ -191,7 +221,14 @@ footer #trading-hours {
 }
 @media all and (min-width: 600px) {
   footer #trading-hours {
-    width: 50%;
+    padding-left: calc(25% - 150px);
+  }
+}
+@media all and (min-width: 1280px) {
+  footer #trading-hours {
+    width: 33%;
+    padding-left: 20px;
+    float: left;
   }
 }
 footer #trading-hours h2 {
@@ -205,23 +242,19 @@ footer #trading-hours h2 {
     padding-left: 20px;
   }
 }
-footer #trading-hours ul {
-  list-style: none;
-}
-footer #trading-hours ul li {
-  color: #fff;
-  font-size: 18px;
-  padding-top: 10px;
+footer #trading-hours p {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-size: 20px;
   text-align: center;
 }
 @media all and (min-width: 600px) {
-  footer #trading-hours ul li {
+  footer #trading-hours p {
     text-align: left;
     padding-left: 20px;
   }
 }
 footer #static-map {
-  border-bottom: 2px solid #00a7d2;
   padding-bottom: 25px;
 }
 footer #static-map img {
@@ -230,8 +263,14 @@ footer #static-map img {
 @media all and (min-width: 600px) {
   footer #static-map img {
     position: absolute;
-    top: 80px;
-    right: 20px;
+    top: 150px;
+    right: calc(25% - 150px);
+  }
+}
+@media all and (min-width: 1280px) {
+  footer #static-map img {
+    top: 95px;
+    right: calc(33% - 350px);
   }
 }
 footer #footer-nav {
