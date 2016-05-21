@@ -177,6 +177,7 @@ footer {
 	padding-left: 0;
 	border-bottom: 10px solid $brandColor2;
 	background: url("../img/carbon-fibre.png") repeat;
+	position: relative;
 
 	#red-head {
 		background-color: $brandColor1;
@@ -190,25 +191,25 @@ footer {
 
 	#address {
 
+		@include bp-tablet {
+			width: 50%;
+		}
+
 		p {
 		// padding-left: 10px;
 		margin-top:5px;
 		margin-bottom: 3px;
 		font-size: 20px;
 		text-align: center;
-
-
-		 
+		
+			@include bp-tablet {
+				text-align: left;
+				padding-left: 20px;
+			}
 		}
 	}
 
 	
-	h2 {
-		font-size: 22px;
-		padding-left: 10px;
-		text-align: center;
-	}
-
 	h2,
 	p {
 		color: #fff;
@@ -216,6 +217,23 @@ footer {
 
 	#trading-hours {
 		
+		padding-bottom: 20px;
+
+		@include bp-tablet {
+			width: 50%;
+		}
+
+		h2 {
+		font-size: 22px;
+		padding-left: 10px;
+		text-align: center;
+		
+			@include bp-tablet {
+				text-align: left;
+				padding-left: 20px;
+			}
+		}
+
 		ul {
 			list-style: none;
 
@@ -225,6 +243,10 @@ footer {
 			padding-top: 10px;
 			text-align: center;
 
+				@include bp-tablet {
+				text-align: left;
+				padding-left: 20px;
+				}
 			}
 		}
 	}
@@ -232,13 +254,15 @@ footer {
 	#static-map {
 		
 		border-bottom: 2px solid $brandColor2;
-		padding-bottom: 20px;
+		padding-bottom: 25px;
 
 		img {
 			margin-left: calc(50% - 150px);
 			
 			@include bp-tablet {
-					// width: 25%;
+				position: absolute;
+				top: 80px;
+				right: 20px;
 			}
 				
 			// @include bp-desktop {

@@ -154,6 +154,7 @@ footer {
   padding-left: 0;
   border-bottom: 10px solid #00a7d2;
   background: url("../img/carbon-fibre.png") repeat;
+  position: relative;
 }
 footer #red-head {
   background-color: #eb2000;
@@ -164,20 +165,45 @@ footer #red-head h1 {
   font-size: 25px;
   line-height: 30px;
 }
+@media all and (min-width: 600px) {
+  footer #address {
+    width: 50%;
+  }
+}
 footer #address p {
   margin-top: 5px;
   margin-bottom: 3px;
   font-size: 20px;
   text-align: center;
 }
-footer h2 {
-  font-size: 22px;
-  padding-left: 10px;
-  text-align: center;
+@media all and (min-width: 600px) {
+  footer #address p {
+    text-align: left;
+    padding-left: 20px;
+  }
 }
 footer h2,
 footer p {
   color: #fff;
+}
+footer #trading-hours {
+  padding-bottom: 20px;
+}
+@media all and (min-width: 600px) {
+  footer #trading-hours {
+    width: 50%;
+  }
+}
+footer #trading-hours h2 {
+  font-size: 22px;
+  padding-left: 10px;
+  text-align: center;
+}
+@media all and (min-width: 600px) {
+  footer #trading-hours h2 {
+    text-align: left;
+    padding-left: 20px;
+  }
 }
 footer #trading-hours ul {
   list-style: none;
@@ -188,12 +214,25 @@ footer #trading-hours ul li {
   padding-top: 10px;
   text-align: center;
 }
+@media all and (min-width: 600px) {
+  footer #trading-hours ul li {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
 footer #static-map {
   border-bottom: 2px solid #00a7d2;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 footer #static-map img {
   margin-left: calc(50% - 150px);
+}
+@media all and (min-width: 600px) {
+  footer #static-map img {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+  }
 }
 footer #footer-nav {
   width: 100%;
