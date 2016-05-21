@@ -78,9 +78,9 @@ nav ul li a:hover {
 }
 @media all and (min-width: 600px) {
   #banner #search {
-    text-align: left;
-    padding-top: 60px;
-    padding-left: 20px;
+    position: relative;
+    top: -48;
+    left: 150px;
   }
 }
 
@@ -135,6 +135,15 @@ nav ul li a:hover {
 #categories ul li a:hover {
   color: #00a7d2;
   border: 1px solid #00a7d2;
+}
+
+main {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 0;
+  height: 400px;
+  background-color: #00a7d2;
 }
 
 #categories ul li a {
