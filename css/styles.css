@@ -147,6 +147,96 @@ main {
   background-color: #00a7d2;
 }
 
+footer {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 0;
+  border-bottom: 10px solid #00a7d2;
+  background: url("../img/carbon-fibre.png") repeat;
+}
+footer #red-head {
+  background-color: #eb2000;
+  color: #fff;
+  text-align: center;
+}
+footer #red-head h1 {
+  font-size: 25px;
+  line-height: 30px;
+}
+footer #address p {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-size: 20px;
+  text-align: center;
+}
+footer h2 {
+  font-size: 22px;
+  padding-left: 10px;
+  text-align: center;
+}
+footer h2,
+footer p {
+  color: #fff;
+}
+footer #trading-hours ul {
+  list-style: none;
+}
+footer #trading-hours ul li {
+  color: #fff;
+  font-size: 18px;
+  padding-top: 10px;
+  text-align: center;
+}
+footer #static-map {
+  border-bottom: 2px solid #00a7d2;
+  padding-bottom: 20px;
+}
+footer #static-map img {
+  margin-left: calc(50% - 150px);
+}
+footer #footer-nav {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+}
+footer #footer-nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+footer #footer-nav ul li {
+  float: left;
+  width: 50%;
+  min-width: 150px;
+}
+@media all and (min-width: 600px) {
+  footer #footer-nav ul li {
+    width: 25%;
+  }
+}
+@media all and (min-width: 1280px) {
+  footer #footer-nav ul li {
+    width: 12.5%;
+  }
+}
+footer #footer-nav ul li a {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #00a7d2;
+  transition: all 0.5s;
+}
+footer #footer-nav ul li a:hover {
+  color: #eb2000;
+}
+
 #categories ul li a {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+17,666666+19,666666+19,474747+29,2c2c2c+37,000000+57,000000+57,111111+71,1c1c1c+91,2b2b2b+95,131313+100 */
   background: #4c4c4c;

@@ -149,6 +149,12 @@ nav {
 	}
 }
 
+
+
+
+
+// Placeholder code here for main
+
 main {
 	width: 100%;
 	max-width: 1280px;
@@ -157,6 +163,151 @@ main {
 	height: 400px;
 	background-color: $brandColor2;
 }
+
+
+
+
+
+// Footer code here
+
+footer {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-left: 0;
+	border-bottom: 10px solid $brandColor2;
+	background: url("../img/carbon-fibre.png") repeat;
+
+	#red-head {
+		background-color: $brandColor1;
+		color: #fff;
+		text-align: center;
+		
+		h1 {font-size: 25px;
+		line-height: 30px;
+		}
+	}
+
+	#address {
+
+		p {
+		// padding-left: 10px;
+		margin-top:5px;
+		margin-bottom: 3px;
+		font-size: 20px;
+		text-align: center;
+
+
+		 
+		}
+	}
+
+	
+	h2 {
+		font-size: 22px;
+		padding-left: 10px;
+		text-align: center;
+	}
+
+	h2,
+	p {
+		color: #fff;
+	}
+
+	#trading-hours {
+		
+		ul {
+			list-style: none;
+
+			li { 
+			color: #fff;
+			font-size: 18px;
+			padding-top: 10px;
+			text-align: center;
+
+			}
+		}
+	}
+
+	#static-map {
+		
+		border-bottom: 2px solid $brandColor2;
+		padding-bottom: 20px;
+
+		img {
+			margin-left: calc(50% - 150px);
+			
+			@include bp-tablet {
+					// width: 25%;
+			}
+				
+			// @include bp-desktop {
+			// 	width: 12.5%;
+			// }
+		}
+	}
+
+	#footer-nav {
+		width: 100%;
+		// max-width: 1284px;
+		margin: 0 auto;
+		padding-left: 0;
+
+		ul {
+			list-style: none;
+			overflow: hidden;
+			padding-left: 0px;
+			margin-top: 0;
+			margin-bottom: 0px;
+
+			li {
+				float: left;
+				width: 50%;
+				min-width: 150px;
+
+				@include bp-tablet {
+					width: 25%;
+				}
+				
+				@include bp-desktop {
+					width: 12.5%;
+				}
+
+				a {
+				text-align: center;
+				font-size: 18px;
+				padding: 10px 0;
+				display: block;
+				width: 100%;
+				color: #fff;
+				text-decoration: none;
+				// border-top: 5px solid $brandColor2;
+				border-bottom: 2px solid $brandColor2;
+				transition: all 0.5s;
+				
+				
+					&:hover {
+					color: $brandColor1;
+
+					// border: 1px solid $brandColor2;
+
+					}
+				}
+			}	
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
