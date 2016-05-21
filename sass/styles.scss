@@ -29,7 +29,6 @@ nav {
 			min-width: 150px;
 
 			@include bp-tablet {
-				// background-color: $brandColor2;
 				width: 25%;
 			}
 
@@ -59,6 +58,7 @@ nav {
 	margin: 0 auto;
 	padding-left: 0;
 	background: url("../img/carbon-fibre.png") repeat;
+	position: relative;
 
 	h1 {
 		font-size: 30px;
@@ -90,9 +90,9 @@ nav {
 		padding-left: calc(50% - 95px);
 
 		@include bp-tablet {
-				position: relative;
-				top: -48;
-				left: 150px;
+				position: absolute;
+				top: 62px;
+				right: 60px;
 		}
 
 	}

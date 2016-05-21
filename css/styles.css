@@ -49,6 +49,7 @@ nav ul li a:hover {
   margin: 0 auto;
   padding-left: 0;
   background: url("../img/carbon-fibre.png") repeat;
+  position: relative;
 }
 #banner h1 {
   font-size: 30px;
@@ -78,9 +79,9 @@ nav ul li a:hover {
 }
 @media all and (min-width: 600px) {
   #banner #search {
-    position: relative;
-    top: -48;
-    left: 150px;
+    position: absolute;
+    top: 62px;
+    right: 60px;
   }
 }
 
