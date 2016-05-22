@@ -146,13 +146,56 @@ main {
   max-width: 1280px;
   margin: 0 auto;
   padding-left: 0;
-  height: 600px;
   background-color: #eee;
 }
 main h1 {
+  font-size: 25px;
   margin-top: 0;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
+  color: #00a7d2;
+}
+main p {
+  font-size: 20px;
+}
+@media all and (min-width: 600px) {
+  main #home-feature {
+    padding-left: calc(50% - 305px);
+    padding-right: calc(50% - 305px);
+  }
+}
+main #home-feature img {
+  max-width: 100%;
+  height: auto;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+@media all and (min-width: 600px) {
+  main #home-feature img {
+    border: 5px solid #fff;
+    max-width: 590px;
+  }
+}
+main #home-feature p {
+  text-align: center;
+}
+main .sub-feature {
+  padding: 10px 30px 10px 20px;
+}
+@media all and (min-width: 410px) {
+  main .sub-feature {
+    padding-left: calc(50% - 205px);
+    padding-right: calc(50% - 205px);
+  }
+}
+main .sub-feature img {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #fff;
+}
+main .sub-feature p {
+  text-align: center;
 }
 
 footer {
@@ -284,7 +327,7 @@ footer #static-map img {
 @media all and (min-width: 1280px) {
   footer #static-map img {
     top: 40px;
-    right: calc(33% - 350px);
+    right: calc(33% - 360px);
   }
 }
 footer #footer-nav {

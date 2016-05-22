@@ -7,6 +7,14 @@
 	border-radius: $radius; 
 }
 
+
+@mixin bp-mini {
+	@media all and (min-width: 410px) {
+		@content;
+	}
+}
+
+
 @mixin bp-tablet {
 	@media all and (min-width: 600px) {
 		@content;
