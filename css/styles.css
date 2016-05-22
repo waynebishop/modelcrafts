@@ -279,6 +279,11 @@ main .mobile-cat {
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
 }
+@media all and (min-width: 605px) {
+  main .mobile-cat {
+    display: none;
+  }
+}
 main .mobile-cat img {
   width: 100%;
   height: auto;
@@ -295,6 +300,43 @@ main .mobile-cat p {
 }
 main .mobile-cat p:hover {
   color: #00a7d2;
+}
+main .cat-section {
+  display: none;
+}
+main .cat-section p {
+  font-size: 16px;
+}
+main .cat-section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media all and (min-width: 605px) {
+  main .cat-section {
+    display: inline-block;
+  }
+}
+main .cat-section .cat-product {
+  width: 25%;
+  float: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
+main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#cat-product-d2 {
+  display: none;
+}
+@media all and (min-width: 1280px) {
+  main .cat-section .cat-product {
+    width: 16.66%;
+  }
+  main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#cat-product-d2 {
+    display: inline-block;
+  }
+}
+main .cat-section .cat-product img {
+  width: 100%;
+  height: auto;
 }
 
 footer {

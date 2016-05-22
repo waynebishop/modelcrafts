@@ -419,6 +419,10 @@ main {
 		margin: 0 auto;
 		padding: 20px 20px 10px 20px;
 
+		@include bp-tablet 	{
+			display: none;
+		}
+
 		img {
 			width: 100%;
 			height: auto;
@@ -439,10 +443,58 @@ main {
 				color: $brandColor2;
 			}
 		}
-			
 	}
 
+	.cat-section {
 		
+		display: none;
+
+		p {
+			font-size: 16px;
+		}
+
+		&:after	{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		
+		@include bp-tablet {
+			display: inline-block;
+		}
+
+		.cat-product {
+		
+			width: 25%;
+			float: left;
+			padding: 5px;
+			box-sizing: border-box;
+
+
+			&#cat-product-d1,
+			&#cat-product-d2 {
+			display: none;
+			}
+
+			@include bp-desktop{
+				width: 16.66%;
+
+				&#cat-product-d1,
+				&#cat-product-d2 {
+				display: inline-block;
+				}
+			}
+
+
+			img	{
+				width: 100%;
+				height: auto;
+			}
+
+		}	
+
+	}
+
 }
 
 
