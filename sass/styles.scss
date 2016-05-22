@@ -158,7 +158,7 @@ nav {
 }
 
 
-// Placeholder code here for main
+
 
 main {
 	width: 100%;
@@ -201,72 +201,8 @@ main {
 		color: #999;
 	}
 
-	// #home-feature {
-
-	// 	@include bp-tablet {
-	// 		padding-left: calc(50% - 305px);
-	// 		padding-right: calc(50% - 305px);
-
-	// 	}
-
-	// 	img {
-	// 		max-width: 100%;
-	// 		height: auto;
-	// 		border-top: 5px solid #fff;
-	// 		border-bottom: 5px solid #fff;
-	// 		transition: all 0.5s;
-	// 		box-sizing: border-box;
-
-	// 		&:hover {
-	// 			border-top: 5px solid lighten($brandColor2, 30%);
-	// 			border-bottom: 5px solid lighten($brandColor2, 30%);
-	// 		}
-
-	// 		@include bp-tablet {
-	// 		border: 5px solid #fff;
-	// 		max-width: 600px;
-	// 		}
-	// 	}
-
-	// 	p {
-	// 		text-align: center;
-	// 	}
-	// }
-
-	// .sub-feature,
-	// .mobile-cat 	{
-		
-	// 	padding: 10px 30px 10px 20px;
-
-	// 	@include bp-mini {
-	// 		padding-left: calc(50% - 205px);
-	// 		padding-right: calc(50% - 205px);
-	// 			}
 
 
-	// 	img {
-	// 		margin: 0;
-	// 		max-width: 100%;
-	// 		height: auto;
-	// 		border: 5px solid #fff;
-	// 		transition: all .5s;
-
-	// 		&:hover {
-	// 			border-top: 5px solid lighten($brandColor2, 30%);
-	// 			border-bottom: 5px solid lighten($brandColor2, 30%);
-	// 		}
-
-	// 	}
-
-	// 	p {
-	// 		font-size: 18px;
-	// 		transition: all 0.5s;
-
-	// 		&:hover {
-	// 			color: $brandColor2;
-	// 		}
-	// 	}
-	// }
 
 	#home-feature {
 		
@@ -274,6 +210,11 @@ main {
 		max-width: 600px;
 		margin: 0 auto;
 		padding: 0;
+
+		@include bp-desktop	{
+			float: left;
+			padding-left: 20px;
+		}
 	
 		p {
 			margin-bottom: 0;

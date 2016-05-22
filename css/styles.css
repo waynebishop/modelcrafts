@@ -181,6 +181,12 @@ main #home-feature {
   margin: 0 auto;
   padding: 0;
 }
+@media all and (min-width: 1280px) {
+  main #home-feature {
+    float: left;
+    padding-left: 20px;
+  }
+}
 main #home-feature p {
   margin-bottom: 0;
   padding: 20px 10px 20px 10px;
