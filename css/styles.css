@@ -175,6 +175,36 @@ main a {
   text-decoration: none;
   color: #999;
 }
+main #home-feature {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+main #home-feature p {
+  margin-bottom: 0;
+  padding: 20px 10px 20px 10px;
+}
+main #home-feature img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transition: all 0.5s;
+}
+main #home-feature img:hover {
+  border-top: 5px solid #6ce1ff;
+  border-bottom: 5px solid #6ce1ff;
+}
+@media all and (min-width: 605px) {
+  main #home-feature img {
+    border: 5px solid #fff;
+  }
+  main #home-feature img:hover {
+    border: 5px solid #6ce1ff;
+  }
+}
 main .mobile-cat-head {
   background-color: #b81900;
   color: #fff;
@@ -194,72 +224,76 @@ main .mobile-cat-head h1 {
   margin-top: 0;
   padding-top: 15px;
 }
-main #home-feature,
-main #test {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0;
-}
-main #home-feature p,
-main #test p {
-  margin-bottom: 0;
-  padding: 20px 10px 20px 10px;
-}
-main #home-feature img,
-main #test img {
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
-  transition: all 0.5s;
-}
-main #home-feature img:hover,
-main #test img:hover {
-  border-top: 5px solid #6ce1ff;
-  border-bottom: 5px solid #6ce1ff;
+main #subset-features:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 @media all and (min-width: 605px) {
-  main #home-feature img,
-  main #test img {
-    border: 5px solid #fff;
-  }
-  main #home-feature img:hover,
-  main #test img:hover {
-    border: 5px solid #6ce1ff;
+  main #subset-features {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
-main .sub-feature,
-main .mobile-cat,
-main .mobile {
+main #subset-features .sub-feature {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
 }
-main .sub-feature img,
-main .mobile-cat img,
-main .mobile img {
+main #subset-features .sub-feature img {
   width: 100%;
   height: auto;
   box-sizing: border-box;
   border: 5px solid #fff;
   transition: all 0.5s;
 }
-main .sub-feature img:hover,
-main .mobile-cat img:hover,
-main .mobile img:hover {
+main #subset-features .sub-feature img:hover {
   border: 5px solid #6ce1ff;
 }
-main .sub-feature p,
-main .mobile-cat p,
-main .mobile p {
+main #subset-features .sub-feature p {
   font-size: 18px;
   transition: all 0.5s;
 }
-main .sub-feature p:hover,
-main .mobile-cat p:hover,
-main .mobile p:hover {
+main #subset-features .sub-feature p:hover {
+  color: #00a7d2;
+}
+@media all and (min-width: 605px) {
+  main #subset-features .sub-feature {
+    max-width: 40%;
+  }
+  main #subset-features .sub-feature img {
+    max-width: 100%;
+  }
+  main #subset-features .sub-feature#new {
+    float: left;
+  }
+  main #subset-features .sub-feature#hot {
+    float: right;
+  }
+  main #subset-features .sub-feature#pick {
+    display: none;
+  }
+}
+main .mobile-cat {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 20px 10px 20px;
+}
+main .mobile-cat img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  transition: all 0.5s;
+}
+main .mobile-cat img:hover {
+  border: 5px solid #6ce1ff;
+}
+main .mobile-cat p {
+  font-size: 18px;
+  transition: all 0.5s;
+}
+main .mobile-cat p:hover {
   color: #00a7d2;
 }
 
@@ -447,7 +481,7 @@ footer #footer-nav ul li a:hover {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #4c4c4c 0%, #595959 12%, #666666 17%, #666666 19%, #666666 19%, #474747 29%, #2c2c2c 37%, black 57%, black 57%, #111111 71%, #1c1c1c 91%, #2b2b2b 95%, #131313 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
   /* IE6-9 */
 }
 
