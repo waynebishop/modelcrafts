@@ -9,14 +9,14 @@
 
 
 @mixin bp-mini {
-	@media all and (min-width: 410px) {
+	@media all and (min-width: 450px) {
 		@content;
 	}
 }
 
 
 @mixin bp-tablet {
-	@media all and (min-width: 600px) {
+	@media all and (min-width: 605px) {
 		@content;
 	}
 }
