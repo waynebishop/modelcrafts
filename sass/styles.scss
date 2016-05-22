@@ -2,9 +2,9 @@
 @import 'mixins';
 
 
-$brandColor1: #b81900;
-$brandColor2: #00a7d2;
-$brandColor3: #eb2000;
+
+
+
 
 body {
 	font-family: Helvetica, Arial;
@@ -69,6 +69,8 @@ nav {
 		font-family: newyork;
 		font-style: italic;
 		text-align: center;
+		margin-top: 0;
+		padding-top: 20px;
 
 		@include bp-tablet {
 			text-align: left;
@@ -80,7 +82,6 @@ nav {
 
 		a {
 			color: transparentize(lighten($brandColor2, 20%), .5);
-			// color: #fff;
 			text-decoration: none;
 			transition: all 0.5s;
 
@@ -167,6 +168,13 @@ main {
 	padding-left: 0;
 	height: 600px;
 	background-color: #eee;
+
+	h1	{
+		margin-top: 0;
+		text-align: center;
+		padding-top: 10px;
+
+	}
 }
 
 
@@ -207,6 +215,8 @@ footer {
 		h1 {font-size: 30px;
 		line-height: 40px;
 		color: #999;
+		margin-top: 0;
+		padding-top: 15px;
 		}
 	}
 
@@ -316,7 +326,6 @@ footer {
 
 	#footer-nav {
 		width: 100%;
-		// max-width: 1284px;
 		margin: 0 auto;
 		padding-left: 0;
 
@@ -348,15 +357,12 @@ footer {
 				width: 100%;
 				color: #fff;
 				text-decoration: none;
-				// border-top: 5px solid $brandColor2;
 				border-bottom: 2px solid $brandColor2;
 				transition: all 0.5s;
 				
 				
 					&:hover {
 					color: $brandColor1;
-
-					// border: 1px solid $brandColor2;
 
 					}
 				}
