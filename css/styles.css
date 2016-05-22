@@ -160,6 +160,7 @@ footer {
 footer #find-info {
   border-bottom: 2px solid #00a7d2;
   padding-bottom: 10px;
+  position: relative;
 }
 footer #find-info:after {
   content: "";
@@ -267,13 +268,13 @@ footer #static-map img {
 @media all and (min-width: 600px) {
   footer #static-map img {
     position: absolute;
-    top: 180px;
+    top: 90px;
     right: calc(25% - 150px);
   }
 }
 @media all and (min-width: 1280px) {
   footer #static-map img {
-    top: 130px;
+    top: 40px;
     right: calc(33% - 350px);
   }
 }

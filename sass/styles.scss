@@ -188,6 +188,7 @@ footer {
 
 		border-bottom: 2px solid $brandColor2;
 		padding-bottom: 10px;
+		position: relative;
 
 		&:after {
 		content: "";
@@ -302,12 +303,12 @@ footer {
 			
 			@include bp-tablet {
 				position: absolute;
-				top: 180px;
+				top: 90px;
 				right: calc(25% - 150px);
 			}
 
 			@include bp-desktop {
-				top: 130px;
+				top: 40px;
 				right: calc(33% - 350px);
 			}
 		}
