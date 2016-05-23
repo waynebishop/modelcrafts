@@ -255,6 +255,12 @@ main {
 
 				&#feat-big-img	{
 					display: inline-block;
+					max-width: 750px;
+					max-height: 500px;
+				}
+
+				img {
+
 				}
 			
 			} 
@@ -394,6 +400,10 @@ main {
 
 				padding: 40px 20px 0 0;
 
+				img	{
+					max-width: 400px;
+				}
+
 			}
 
 		}
@@ -459,9 +469,16 @@ main {
 	.cat-section {
 		
 		display: none;
+		padding-left: 5px;
+		padding-right: 5px;
 
 		p {
 			font-size: 16px;
+			transition: all 0.5s;
+
+			&:hover {
+				color: $brandColor2;
+			}
 		}
 
 		&:after	{
@@ -500,6 +517,15 @@ main {
 			img	{
 				width: 100%;
 				height: auto;
+				box-sizing: border-box;
+				border: 5px solid #fff;
+				transition: all 0.5s;
+
+				&:hover {
+					border: 5px solid lighten($brandColor2, 30%);
+					
+				}
+
 			}
 
 		}	

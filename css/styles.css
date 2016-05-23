@@ -222,6 +222,8 @@ main #home-feature img:hover {
   }
   main #home-feature img#feat-big-img {
     display: inline-block;
+    max-width: 750px;
+    max-height: 500px;
   }
 }
 main #video-feature,
@@ -329,6 +331,9 @@ main #subset-features .sub-feature p:hover {
   main #subset-features .sub-feature#new {
     float: right;
   }
+  main #subset-features .sub-feature img {
+    max-width: 400px;
+  }
 }
 main .mobile-cat-head {
   background-color: #b81900;
@@ -378,9 +383,15 @@ main .mobile-cat p:hover {
 }
 main .cat-section {
   display: none;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 main .cat-section p {
   font-size: 16px;
+  transition: all 0.5s;
+}
+main .cat-section p:hover {
+  color: #00a7d2;
 }
 main .cat-section:after {
   content: "";
@@ -412,6 +423,12 @@ main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#ca
 main .cat-section .cat-product img {
   width: 100%;
   height: auto;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  transition: all 0.5s;
+}
+main .cat-section .cat-product img:hover {
+  border: 5px solid #6ce1ff;
 }
 
 footer {
