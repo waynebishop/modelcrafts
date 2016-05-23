@@ -289,23 +289,6 @@ main #subset-features .sub-feature {
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
 }
-main #subset-features .sub-feature img {
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  border: 5px solid #fff;
-  transition: all 0.5s;
-}
-main #subset-features .sub-feature img:hover {
-  border: 5px solid #6ce1ff;
-}
-main #subset-features .sub-feature p {
-  font-size: 18px;
-  transition: all 0.5s;
-}
-main #subset-features .sub-feature p:hover {
-  color: #00a7d2;
-}
 @media all and (min-width: 605px) {
   main #subset-features .sub-feature {
     max-width: 40%;
@@ -334,6 +317,23 @@ main #subset-features .sub-feature p:hover {
   main #subset-features .sub-feature img {
     max-width: 400px;
   }
+}
+main #subset-features .sub-feature img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  transition: all 0.5s;
+}
+main #subset-features .sub-feature img:hover {
+  border: 5px solid #6ce1ff;
+}
+main #subset-features .sub-feature p {
+  font-size: 18px;
+  transition: all 0.5s;
+}
+main #subset-features .sub-feature p:hover {
+  color: #00a7d2;
 }
 main .mobile-cat-head {
   background-color: #b81900;

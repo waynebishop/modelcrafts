@@ -262,9 +262,7 @@ main {
 				img {
 
 				}
-			
 			} 
-
 		}
 	}
 
@@ -337,38 +335,7 @@ main {
 			margin: 0 auto;
 			padding: 20px 20px 10px 20px;
 
-			// &#new 	{
-			// 	background-color: pink;
-			// }
-
-			// &#hot 	{
-			// 	background-color: blue;
-			// }
-
-			img {
-				width: 100%;
-				height: auto;
-				box-sizing: border-box;
-				border: 5px solid #fff;
-				transition: all 0.5s;
-
-				&:hover {
-					border: 5px solid lighten($brandColor2, 30%);
-					
-				}
-			}
-			p {
-				font-size: 18px;
-				transition: all 0.5s;
-
-				&:hover {
-					color: $brandColor2;
-				}
-			}
-				
-		}
-
-		.sub-feature {
+			// test
 			
 			@include bp-tablet {
 				max-width: 40%;
@@ -406,6 +373,29 @@ main {
 
 			}
 
+
+			// test
+
+			img {
+				width: 100%;
+				height: auto;
+				box-sizing: border-box;
+				border: 5px solid #fff;
+				transition: all 0.5s;
+
+				&:hover {
+					border: 5px solid lighten($brandColor2, 30%);
+					
+				}
+			}
+			p {
+				font-size: 18px;
+				transition: all 0.5s;
+
+				&:hover {
+					color: $brandColor2;
+				}
+			}
 		}
 	}	
 
