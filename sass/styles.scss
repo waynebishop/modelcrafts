@@ -158,7 +158,7 @@ nav {
 }
 
 
-
+// Start of Main
 
 main {
 	width: 100%;
@@ -556,8 +556,11 @@ main {
 
 			}
 
-		}	
+			&#cart-section	{
+				background-color: orange;
+			}
 
+		}
 	}
 
 	// For Product Pages
@@ -589,6 +592,19 @@ main {
 			clear: both;
 		}
 		
+		// Cart start
+
+		&#cart-section	{
+			background-color: orange;
+			min-height: 500px;
+
+
+		}
+
+
+
+
+		// Cart end
 
 		.subcat-product {
 		
@@ -640,6 +656,12 @@ main {
 }
 
 
+
+
+
+
+
+// End of Main
 
 
 

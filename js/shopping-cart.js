@@ -82,7 +82,7 @@ function showCartTable() {
 	// Create the name heading
 	var nameHeading = document.createElement('th');
 
-	nameheading.innerHTML = 'Product Name';
+	nameHeading.innerHTML = 'Product Name';
 
 	// Create price heading
 	var priceHeading = document.createElement('th');
@@ -123,11 +123,13 @@ function showCartTable() {
 		row.appendChild(priceTD);
 
 		// Add this row to the table
-		table .appendChild(row);
+		table.appendChild(row);
 
 	}
 
 	console.log(grandTotal);
+	// console.log(nameTD);
+	// console.log(productPrice);
 
 	var grandTotalRow = document.createElement('tr');
 	var grandTotalTD = document.createElement('td');
