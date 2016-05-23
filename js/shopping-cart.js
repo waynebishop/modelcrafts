@@ -15,17 +15,17 @@ updateCartDisplay();
 
 
 
-var addToCartButtons = document.query.selectorAll('.add-to-cart');
+var addToCartButtons = document.querySelectorAll('.add-to-cart');
 
 
-for(var=i; i<addToCartButtons.length); i++) {
+for(var i=0; i<addToCartButtons.length; i++) {
 
 	addToCartButtons[i].onclick = addToCart;
 }
 
 function addToCart()	{
 
-	var productname = this.dataset.name;
+	var productName = this.dataset.name;
 	var productPrice = parseFloat(this.dataset.price);
 
 	var product = {
@@ -46,7 +46,7 @@ function addToCart()	{
 
 document.querySelector('#clear-cart').onclick = function() {
 
-	localStorage.setItem('cart', JSON.stringify( []));
+	localStorage.setItem('cart', JSON.stringify( [] ));
 
 	cart = [];
 
@@ -105,10 +105,10 @@ function showCartTable() {
 		// Get product price & add to the GT
 		grandTotal += cart[i].price;
 
-		// Create product name data element
+		// Create a row for this product
 		var row = document.createElement('tr');
 
-		// Add data to the TD element
+		// Create the product name data element
 		var nameTD = document.createElement('td');
 
 		// Create product price data element
@@ -138,14 +138,14 @@ function showCartTable() {
 	grandTotalRow.appendChild(fillerTD);
 	grandTotalRow.appendChild(grandTotalTD);
 
-	table.appendchild(grandTotalRow);
+	table.appendChild(grandTotalRow);
 
 	// Clear whatever is inside the div
 	container.innerHTML = '';
 
 	// Add table to the screen
-	container.appendchild(table);
-	
+	container.appendChild(table);
+
 }
 
 
