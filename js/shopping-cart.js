@@ -116,7 +116,7 @@ function showCartTable() {
 
 		// Add data to the TD element
 		nameTD.innerHTML = cart[i].name;
-		priceTD.innerHTML = cart[i].price; 
+		priceTD.innerHTML = '$' + cart[i].price; 
 
 		// Add the TD elements to the row
 		row.appendChild(nameTD);
