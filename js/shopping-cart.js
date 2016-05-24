@@ -131,17 +131,49 @@ function showCartTable() {
 		table .appendChild(row);
 	}
 
+
+	// Freight tablke row and data
+
+	var freightCost = 10;
+
+	console.log(freightCost);
+
+	var freightRow = document.createElement('tr');
+	var freightTextTD = document.createElement('td');
+	var freightCostTD = document.createElement('td');
+
+	freightTextTD.innerHTML = 'Freight (NZ only)';
+
+	freightCostTD.innerHTML = '$' + freightCost;
+
+	freightRow.appendChild(freightTextTD);
+	freightRow.appendChild(freightCostTD);
+
+	table.appendChild(freightRow);
+
+	// Clear whatever is inside the div
+	container.innerHTML = '';
+
+	// Add the table to the screeen
+	container.appendChild(table);
+
+	// Grand Total table row and data.
+	
+	console.log(grandTotal);
+
+	grandTotal += freightCost;
+
 	console.log(grandTotal);
 
 	var grandTotalRow = document.createElement('tr');
 	var grandTotalTD = document.createElement('td');
-	var fillerTD = document.createElement('td');
+	var gtTextTD = document.createElement('td');
 
-	fillerTD.innerHTML = 'Grand Total';
+	gtTextTD.innerHTML = 'Grand Total';
 
 	grandTotalTD.innerHTML = '$' + grandTotal;
 
-	grandTotalRow.appendChild(fillerTD);
+	grandTotalRow.appendChild(gtTextTD);
 	grandTotalRow.appendChild(grandTotalTD);
 
 	table.appendChild(grandTotalRow);
