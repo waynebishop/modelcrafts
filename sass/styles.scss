@@ -169,6 +169,10 @@ main {
 	background-color: #eee;
 	padding-bottom: 20px;
 	margin-top: 0;
+	
+	.hidden {
+		display: none;
+	}
 
 	h1	{
 		font-size: 30px;
@@ -690,6 +694,21 @@ main {
 				
 				td 	{
 					min-width: 8em;
+
+				} 
+
+				tr 	{
+					height: 30px;
+
+					
+					&:nth-child(odd) {
+						background-color: #ccc;
+					}
+				
+
+					&:last-child {
+						background-color: $flat-blue-1;
+					} 
 				} 
 
 				th {
@@ -697,6 +716,34 @@ main {
 				}
 				
 			}
+		
+			#to-checkout,
+			#clear-cart	{
+				min-width: 14em;
+				font-size: 1em;
+				line-height: 1.5em;
+				border-radius: 10px;
+				margin-left: calc(50% - 7em);
+				margin-top: 2em;
+				transition: all 0.5s;
+			}
+
+			#to-checkout	{
+				background-color: $flat-purple-1;
+
+				&:hover	{
+					background-color: $flat-purple-2;
+				}
+			}
+
+			#clear-cart	{
+				background-color: $flat-orange-1;
+
+				&:hover	{
+					background-color: $flat-orange-3;
+				}
+			}
+
 		}
 
 

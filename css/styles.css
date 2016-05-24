@@ -170,6 +170,10 @@ main {
   margin-top: 0;
 }
 
+main .hidden {
+  display: none;
+}
+
 main h1 {
   font-size: 30px;
   margin-top: 0;
@@ -644,8 +648,47 @@ main .subcat-section#cart-section table td {
   min-width: 8em;
 }
 
+main .subcat-section#cart-section table tr {
+  height: 30px;
+}
+
+main .subcat-section#cart-section table tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
+main .subcat-section#cart-section table tr:last-child {
+  background-color: #3498DB;
+}
+
 main .subcat-section#cart-section table th {
   background-color: #3498DB;
+}
+
+main .subcat-section#cart-section #to-checkout,
+main .subcat-section#cart-section #clear-cart {
+  min-width: 14em;
+  font-size: 1em;
+  line-height: 1.5em;
+  border-radius: 10px;
+  margin-left: calc(50% - 7em);
+  margin-top: 2em;
+  transition: all 0.5s;
+}
+
+main .subcat-section#cart-section #to-checkout {
+  background-color: #9B59B6;
+}
+
+main .subcat-section#cart-section #to-checkout:hover {
+  background-color: #8E44AD;
+}
+
+main .subcat-section#cart-section #clear-cart {
+  background-color: #F39C12;
+}
+
+main .subcat-section#cart-section #clear-cart:hover {
+  background-color: #D35400;
 }
 
 footer {

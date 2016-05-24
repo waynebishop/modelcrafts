@@ -63,7 +63,6 @@ function updateCartDisplay() {
 	// Update & show cart table
 	showCartTable();
 
-
 }
 
 function showCartTable() {
@@ -124,7 +123,6 @@ function showCartTable() {
 
 		// Add this row to the table
 		table .appendChild(row);
-
 	}
 
 	console.log(grandTotal);
@@ -133,7 +131,9 @@ function showCartTable() {
 	var grandTotalTD = document.createElement('td');
 	var fillerTD = document.createElement('td');
 
-	grandTotalTD.innerHTML = 'Grand Total: ' + grandTotal;
+	fillerTD.innerHTML = 'Grand Total';
+
+	grandTotalTD.innerHTML = '$' + grandTotal;
 
 	grandTotalRow.appendChild(fillerTD);
 	grandTotalRow.appendChild(grandTotalTD);
