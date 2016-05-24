@@ -667,7 +667,32 @@ main {
 					border: 5px solid #fff;
 					
 				}
+			}
 
+			.price	{
+				font-size: 18px;
+				background-color: $priceColorBG;	
+				display: block;
+				width: 5em;
+				text-align: center;
+				line-height: 25px;
+				border: 2px solid #666;
+				border-radius: 5px; 
+
+
+
+			}
+
+			.add-to-cart	{
+				margin-top: 10px;
+				font-size: 14px;
+				background-color: $addToCartBG;	
+				display: block;
+				width: 7em;
+				text-align: center;
+				line-height: 25px;
+				border: 2px solid $addToCartBD;
+				border-radius: 5px;
 			}
 
 		}

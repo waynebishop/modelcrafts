@@ -625,6 +625,29 @@ main .subcat-section .subcat-product img:hover {
   border: 5px solid #fff;
 }
 
+main .subcat-section .subcat-product .price {
+  font-size: 18px;
+  background-color: #ffffff;
+  display: block;
+  width: 5em;
+  text-align: center;
+  line-height: 25px;
+  border: 2px solid #666;
+  border-radius: 5px;
+}
+
+main .subcat-section .subcat-product .add-to-cart {
+  margin-top: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  display: block;
+  width: 7em;
+  text-align: center;
+  line-height: 25px;
+  border: 2px solid #b81900;
+  border-radius: 5px;
+}
+
 main .subcat-section#cart-section {
   min-height: 500px;
 }
