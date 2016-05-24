@@ -21,6 +21,7 @@ var addToCartButtons = document.querySelectorAll('.add-to-cart');
 for(var i=0; i<addToCartButtons.length; i++) {
 
 	addToCartButtons[i].onclick = addToCart;
+
 }
 
 function addToCart()	{
@@ -41,6 +42,8 @@ function addToCart()	{
 
 	updateCartDisplay();
 
+	alert(productName + ' added to your Cart. Thank you.');
+
 }
 
 // Listen for clicks on the clear cart button
@@ -51,6 +54,9 @@ document.querySelector('#clear-cart').onclick = function() {
 	cart = [];
 
 	updateCartDisplay();
+
+	// Alert message for empty cart
+	alert('Your Cart is now empty');
 
 }; 
 
