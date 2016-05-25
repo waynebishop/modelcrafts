@@ -520,6 +520,7 @@ main .cat-section .cat-product {
   float: left;
   padding: 5px;
   box-sizing: border-box;
+  position: relative;
 }
 
 main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#cat-product-d2 {
@@ -545,6 +546,23 @@ main .cat-section .cat-product img {
 
 main .cat-section .cat-product img:hover {
   border: 5px solid #6ce1ff;
+}
+
+main .cat-section .cat-product .cat-tag {
+  background-color: #00a7d2;
+  padding: 4px 10px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 0 5px 0 5px;
+}
+
+@media all and (min-width: 605px) {
+  main .cat-section .cat-product .cat-tag {
+    left: 0;
+    top: 0;
+  }
 }
 
 main .mobile-subcat {
@@ -606,25 +624,28 @@ main .subcat-section .subcat-product {
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
   position: relative;
-}
-
-main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2 {
-  display: none;
+  padding-bottom: 100px;
 }
 
 @media all and (min-width: 605px) {
   main .subcat-section .subcat-product {
+    min-height: 470px;
     display: inline-block;
     width: 25%;
+    max-width: none;
     float: left;
-    padding: 5px;
+    padding: 5px 5px 100px 5px;
     box-sizing: border-box;
+  }
+  main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2 {
+    display: none;
   }
 }
 
 @media all and (min-width: 1280px) {
   main .subcat-section .subcat-product {
     width: 16.66%;
+    min-height: 450px;
   }
   main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2 {
     display: inline-block;
@@ -669,6 +690,8 @@ main .subcat-section .subcat-product .price {
   line-height: 25px;
   border: 2px solid #666;
   border-radius: 5px;
+  position: absolute;
+  bottom: 70px;
 }
 
 main .subcat-section .subcat-product .add-to-cart {
@@ -681,6 +704,8 @@ main .subcat-section .subcat-product .add-to-cart {
   line-height: 25px;
   border: 2px solid #b81900;
   border-radius: 5px;
+  position: absolute;
+  bottom: 30px;
 }
 
 main .subcat-section#cart-section {
