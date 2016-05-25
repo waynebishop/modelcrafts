@@ -376,6 +376,7 @@ main {
 			max-width: 400px;
 			margin: 0 auto;
 			padding: 20px 20px 10px 20px;
+			position: relative;
 
 			// test
 			
@@ -430,6 +431,23 @@ main {
 					
 				}
 			}
+			
+			.feat-tag	{
+				background-color: lighten($brandColor1, 10%);
+				padding: 4px 10px;
+				color: #fff;
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				border-radius: 5px 0 5px 0;
+
+				@include bp-desktop	{
+					top: 35px;
+				} 
+
+
+			}
+
 			p {
 				font-size: 18px;
 				transition: all 0.5s;
@@ -632,6 +650,7 @@ main {
 			max-width: 300px;
 			margin: 0 auto;
 			padding: 20px 20px 10px 20px;
+			position: relative;
 
 			&#subcat-product-d1,
 				&#subcat-product-d2 {
@@ -667,6 +686,23 @@ main {
 					border: 5px solid #fff;
 					
 				}
+			}
+
+			.subcat-tag	{
+				background-color: lighten($brandColor1, 10%);
+				padding: 4px 10px;
+				color: #fff;
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				border-radius: 0 5px 0 5px;
+
+				@include bp-tablet	{
+					left: 0;
+					top: 0;
+
+				}
+
 			}
 
 			.price	{

@@ -362,6 +362,7 @@ main #subset-features .sub-feature {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
+  position: relative;
 }
 
 @media all and (min-width: 605px) {
@@ -405,6 +406,22 @@ main #subset-features .sub-feature img {
 
 main #subset-features .sub-feature img:hover {
   border: 5px solid #6ce1ff;
+}
+
+main #subset-features .sub-feature .feat-tag {
+  background-color: #eb2000;
+  padding: 4px 10px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 5px 0 5px 0;
+}
+
+@media all and (min-width: 1280px) {
+  main #subset-features .sub-feature .feat-tag {
+    top: 35px;
+  }
 }
 
 main #subset-features .sub-feature p {
@@ -588,6 +605,7 @@ main .subcat-section .subcat-product {
   max-width: 300px;
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
+  position: relative;
 }
 
 main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2 {
@@ -623,6 +641,23 @@ main .subcat-section .subcat-product img {
 
 main .subcat-section .subcat-product img:hover {
   border: 5px solid #fff;
+}
+
+main .subcat-section .subcat-product .subcat-tag {
+  background-color: #eb2000;
+  padding: 4px 10px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 0 5px 0 5px;
+}
+
+@media all and (min-width: 605px) {
+  main .subcat-section .subcat-product .subcat-tag {
+    left: 0;
+    top: 0;
+  }
 }
 
 main .subcat-section .subcat-product .price {
