@@ -11,6 +11,7 @@ nav {
   padding-left: 0;
   border-bottom: 5px solid #666;
 }
+
 nav ul {
   list-style: none;
   overflow: hidden;
@@ -18,16 +19,19 @@ nav ul {
   margin-top: 0;
   margin-bottom: 0px;
 }
+
 nav ul li {
   float: left;
   width: 50%;
   min-width: 150px;
 }
+
 @media all and (min-width: 605px) {
   nav ul li {
     width: 25%;
   }
 }
+
 nav ul li a {
   text-align: center;
   font-size: 20px;
@@ -39,6 +43,7 @@ nav ul li a {
   transition: all 0.5s;
   box: border-box;
 }
+
 nav ul li a:hover {
   background-color: #851200;
 }
@@ -52,6 +57,7 @@ nav ul li a:hover {
   background: url("../img/carbon-fibre.png") repeat;
   position: relative;
 }
+
 #banner h1 {
   font-size: 40px;
   font-family: newyork;
@@ -60,6 +66,7 @@ nav ul li a:hover {
   margin-top: 0;
   padding-top: 20px;
 }
+
 @media all and (min-width: 605px) {
   #banner h1 {
     text-align: left;
@@ -68,20 +75,24 @@ nav ul li a:hover {
     top: 40px;
   }
 }
+
 #banner h1 a {
   color: rgba(57, 214, 255, 0.5);
   text-decoration: none;
   transition: all 0.5s;
 }
+
 #banner h1 a:hover {
   color: rgba(0, 86, 108, 0.8);
 }
+
 #banner #search {
   display: inline-block;
   position: absolute;
   bottom: 15px;
   left: calc(50% - 95px);
 }
+
 @media all and (min-width: 605px) {
   #banner #search {
     top: 20px;
@@ -95,6 +106,7 @@ nav ul li a:hover {
   margin: 0 auto;
   padding-left: 0;
 }
+
 #categories ul {
   list-style: none;
   overflow: hidden;
@@ -102,6 +114,7 @@ nav ul li a:hover {
   margin-top: 0;
   margin-bottom: 0px;
 }
+
 @media all and (min-width: 1280px) {
   #categories ul {
     -webkit-border-radius: 3px;
@@ -111,21 +124,25 @@ nav ul li a:hover {
     border-radius: 3px;
   }
 }
+
 #categories ul li {
   float: left;
   width: 50%;
   min-width: 150px;
 }
+
 @media all and (min-width: 605px) {
   #categories ul li {
     width: 25%;
   }
 }
+
 @media all and (min-width: 1280px) {
   #categories ul li {
     width: 12.5%;
   }
 }
+
 #categories ul li a {
   text-align: center;
   font-size: 18px;
@@ -137,6 +154,7 @@ nav ul li a:hover {
   border: 1px solid #666;
   transition: all 0.5s;
 }
+
 #categories ul li a:hover {
   color: #00a7d2;
   border: 1px solid #00a7d2;
@@ -151,6 +169,11 @@ main {
   padding-bottom: 20px;
   margin-top: 0;
 }
+
+main .hidden {
+  display: none;
+}
+
 main h1 {
   font-size: 30px;
   margin-top: 0;
@@ -158,32 +181,39 @@ main h1 {
   padding-top: 20px;
   color: #00a7d2;
 }
+
 main h2 {
   font-size: 20px;
   color: #333;
   text-align: center;
   transition: all 0.5s;
 }
+
 main h2:hover {
   color: #00a7d2;
 }
+
 main p {
   font-size: 20px;
   color: #333;
 }
+
 main a {
   text-decoration: none;
   color: #999;
 }
+
 main #home-feature {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
   padding: 0;
 }
+
 main #home-feature img + #feat-big-img {
   display: none;
 }
+
 @media all and (min-width: 1280px) {
   main #home-feature {
     float: left;
@@ -192,10 +222,12 @@ main #home-feature img + #feat-big-img {
     max-width: 60%;
   }
 }
+
 main #home-feature p {
   margin-bottom: 0;
   padding: 20px 10px 20px 10px;
 }
+
 main #home-feature img {
   width: 100%;
   height: auto;
@@ -204,10 +236,12 @@ main #home-feature img {
   border-bottom: 5px solid #fff;
   transition: all 0.5s;
 }
+
 main #home-feature img:hover {
   border-top: 5px solid #6ce1ff;
   border-bottom: 5px solid #6ce1ff;
 }
+
 @media all and (min-width: 605px) {
   main #home-feature img {
     border: 5px solid #fff;
@@ -216,6 +250,7 @@ main #home-feature img:hover {
     border: 5px solid #6ce1ff;
   }
 }
+
 @media all and (min-width: 1280px) {
   main #home-feature img#feat-mid-img {
     display: none;
@@ -226,16 +261,19 @@ main #home-feature img:hover {
     max-height: 500px;
   }
 }
+
 main #puzzle-feature {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
   padding: 0;
 }
+
 main #puzzle-feature p {
   margin-bottom: 0;
   padding: 20px 10px 20px 10px;
 }
+
 main #puzzle-feature img {
   width: 100%;
   height: auto;
@@ -244,10 +282,12 @@ main #puzzle-feature img {
   border-bottom: 5px solid #fff;
   transition: all 0.5s;
 }
+
 main #puzzle-feature img:hover {
   border-top: 5px solid #6ce1ff;
   border-bottom: 5px solid #6ce1ff;
 }
+
 @media all and (min-width: 605px) {
   main #puzzle-feature img {
     border: 5px solid #fff;
@@ -256,16 +296,19 @@ main #puzzle-feature img:hover {
     border: 5px solid #6ce1ff;
   }
 }
+
 main #video-feature {
   width: 100%;
   max-width: 854px;
   margin: 0 auto;
   padding: 0;
 }
+
 main #video-feature p {
   margin-bottom: 0;
   padding: 20px 10px 20px 10px;
 }
+
 main #video-feature iframe {
   width: 100%;
   max-height: 480;
@@ -274,10 +317,12 @@ main #video-feature iframe {
   border-bottom: 5px solid #b81900;
   transition: all 0.5s;
 }
+
 main #video-feature iframe:hover {
   border-top: 5px solid #6ce1ff;
   border-bottom: 5px solid #6ce1ff;
 }
+
 @media all and (min-width: 605px) {
   main #video-feature iframe {
     border: 5px solid #b81900;
@@ -286,33 +331,40 @@ main #video-feature iframe:hover {
     border: 5px solid #6ce1ff;
   }
 }
+
 main #top-features:after {
   content: "";
   display: block;
   clear: both;
 }
+
 main #subset-features:after {
   content: "";
   display: block;
   clear: both;
 }
+
 @media all and (min-width: 605px) {
   main #subset-features {
     max-width: 800px;
     margin: 0 auto;
   }
 }
+
 @media all and (min-width: 1280px) {
   main #subset-features {
     float: right;
     max-width: 38%;
   }
 }
+
 main #subset-features .sub-feature {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
+  position: relative;
 }
+
 @media all and (min-width: 605px) {
   main #subset-features .sub-feature {
     max-width: 40%;
@@ -330,6 +382,7 @@ main #subset-features .sub-feature {
     display: none;
   }
 }
+
 @media all and (min-width: 1280px) {
   main #subset-features .sub-feature {
     max-width: 100%;
@@ -342,6 +395,7 @@ main #subset-features .sub-feature {
     max-width: 400px;
   }
 }
+
 main #subset-features .sub-feature img {
   width: 100%;
   height: auto;
@@ -349,16 +403,36 @@ main #subset-features .sub-feature img {
   border: 5px solid #fff;
   transition: all 0.5s;
 }
+
 main #subset-features .sub-feature img:hover {
   border: 5px solid #6ce1ff;
 }
+
+main #subset-features .sub-feature .feat-tag {
+  background-color: #eb2000;
+  padding: 4px 10px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 5px 0 5px 0;
+}
+
+@media all and (min-width: 1280px) {
+  main #subset-features .sub-feature .feat-tag {
+    top: 35px;
+  }
+}
+
 main #subset-features .sub-feature p {
   font-size: 18px;
   transition: all 0.5s;
 }
+
 main #subset-features .sub-feature p:hover {
   color: #00a7d2;
 }
+
 main .mobile-cat-head {
   background-color: #b81900;
   color: #fff;
@@ -368,9 +442,11 @@ main .mobile-cat-head {
   margin-bottom: 10px;
   transition: all 0.5s;
 }
+
 main .mobile-cat-head:hover {
   background-color: #851200;
 }
+
 main .mobile-cat-head h1 {
   font-size: 25px;
   line-height: 30px;
@@ -378,16 +454,19 @@ main .mobile-cat-head h1 {
   margin-top: 0;
   padding-top: 15px;
 }
+
 main .mobile-cat {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
 }
+
 @media all and (min-width: 605px) {
   main .mobile-cat {
     display: none;
   }
 }
+
 main .mobile-cat img {
   width: 100%;
   height: auto;
@@ -395,47 +474,59 @@ main .mobile-cat img {
   border: 5px solid #fff;
   transition: all 0.5s;
 }
+
 main .mobile-cat img:hover {
   border: 5px solid #6ce1ff;
 }
+
 main .mobile-cat p {
   font-size: 18px;
   transition: all 0.5s;
 }
+
 main .mobile-cat p:hover {
   color: #00a7d2;
 }
+
 main .cat-section {
   display: none;
   padding-left: 5px;
   padding-right: 5px;
 }
+
 main .cat-section p {
   font-size: 16px;
   transition: all 0.5s;
 }
+
 main .cat-section p:hover {
   color: #00a7d2;
 }
+
 main .cat-section:after {
   content: "";
   display: block;
   clear: both;
 }
+
 @media all and (min-width: 605px) {
   main .cat-section {
     display: inline-block;
   }
 }
+
 main .cat-section .cat-product {
   width: 25%;
   float: left;
   padding: 5px;
   box-sizing: border-box;
+  position: relative;
 }
+
 main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#cat-product-d2 {
   display: none;
 }
+
 @media all and (min-width: 1280px) {
   main .cat-section .cat-product {
     width: 16.66%;
@@ -444,6 +535,7 @@ main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#ca
     display: inline-block;
   }
 }
+
 main .cat-section .cat-product img {
   width: 100%;
   height: auto;
@@ -451,62 +543,115 @@ main .cat-section .cat-product img {
   border: 5px solid #fff;
   transition: all 0.5s;
 }
+
 main .cat-section .cat-product img:hover {
   border: 5px solid #6ce1ff;
 }
-main .cat-section .cat-product#cart-section {
-  background-color: orange;
+
+main .cat-section .cat-product .cat-tag {
+  background-color: #00a7d2;
+  padding: 4px 10px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 0 5px 0 5px;
 }
+
+@media all and (min-width: 605px) {
+  main .cat-section .cat-product .cat-tag {
+    left: 0;
+    top: 0;
+  }
+}
+
+main .mobile-subcat {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 20px 10px 20px;
+}
+
+@media all and (min-width: 605px) {
+  main .mobile-subcat {
+    display: none;
+  }
+}
+
+main .mobile-subcat img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  transition: all 0.5s;
+}
+
+main .mobile-subcat img:hover {
+  border: 5px solid #fff;
+}
+
+main .mobile-subcat p {
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+main .mobile-subcat h2:hover {
+  color: #333;
+}
+
 main .subcat-section {
   padding-left: 5px;
   padding-right: 5px;
 }
+
 main .subcat-section p {
   font-size: 16px;
-  transition: all 0.5s;
 }
-main .subcat-section p:hover {
-  color: #00a7d2;
-}
+
 main .subcat-section:after {
   content: "";
   display: block;
   clear: both;
 }
+
 main .subcat-section:after {
   content: "";
   display: block;
   clear: both;
 }
-main .subcat-section#cart-section {
-  background-color: orange;
-  min-height: 500px;
-}
+
 main .subcat-section .subcat-product {
   max-width: 300px;
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
+  position: relative;
+  padding-bottom: 100px;
 }
-main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2 {
-  display: none;
-}
+
 @media all and (min-width: 605px) {
   main .subcat-section .subcat-product {
+    min-height: 470px;
     display: inline-block;
     width: 25%;
+    max-width: none;
     float: left;
-    padding: 5px;
+    padding: 5px 5px 100px 5px;
     box-sizing: border-box;
   }
+  main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2 {
+    display: none;
+  }
 }
+
 @media all and (min-width: 1280px) {
   main .subcat-section .subcat-product {
     width: 16.66%;
+    min-height: 450px;
   }
   main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2 {
     display: inline-block;
   }
 }
+
 main .subcat-section .subcat-product img {
   width: 100%;
   height: auto;
@@ -514,8 +659,119 @@ main .subcat-section .subcat-product img {
   border: 5px solid #fff;
   transition: all 0.5s;
 }
+
 main .subcat-section .subcat-product img:hover {
-  border: 5px solid #6ce1ff;
+  border: 5px solid #fff;
+}
+
+main .subcat-section .subcat-product .subcat-tag {
+  background-color: #eb2000;
+  padding: 4px 10px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 0 5px 0 5px;
+}
+
+@media all and (min-width: 605px) {
+  main .subcat-section .subcat-product .subcat-tag {
+    left: 0;
+    top: 0;
+  }
+}
+
+main .subcat-section .subcat-product .price {
+  font-size: 18px;
+  background-color: #ffffff;
+  display: block;
+  width: 5em;
+  text-align: center;
+  line-height: 25px;
+  border: 2px solid #666;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 70px;
+}
+
+main .subcat-section .subcat-product .add-to-cart {
+  margin-top: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  display: block;
+  width: 7em;
+  text-align: center;
+  line-height: 25px;
+  border: 2px solid #b81900;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 30px;
+}
+
+main .subcat-section#cart-section {
+  min-height: 500px;
+}
+
+main .subcat-section#cart-section p {
+  font-size: 18px;
+  color: #333;
+}
+
+main .subcat-section#cart-section p:hover {
+  color: #333;
+}
+
+main .subcat-section#cart-section table {
+  border: 4px solid #666;
+  border-spacing: 5px;
+  margin: 0 auto;
+}
+
+main .subcat-section#cart-section table td {
+  min-width: 8em;
+}
+
+main .subcat-section#cart-section table tr {
+  height: 30px;
+}
+
+main .subcat-section#cart-section table tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
+main .subcat-section#cart-section table tr:last-child {
+  background-color: #3498DB;
+}
+
+main .subcat-section#cart-section table th {
+  background-color: #3498DB;
+}
+
+main .subcat-section#cart-section #to-checkout,
+main .subcat-section#cart-section #clear-cart {
+  min-width: 14em;
+  font-size: 1em;
+  line-height: 1.5em;
+  border-radius: 10px;
+  margin-left: calc(50% - 7em);
+  margin-top: 2em;
+  transition: all 0.5s;
+}
+
+main .subcat-section#cart-section #to-checkout {
+  background-color: #9B59B6;
+}
+
+main .subcat-section#cart-section #to-checkout:hover {
+  background-color: #8E44AD;
+}
+
+main .subcat-section#cart-section #clear-cart {
+  background-color: #F39C12;
+}
+
+main .subcat-section#cart-section #clear-cart:hover {
+  background-color: #D35400;
 }
 
 footer {
@@ -527,16 +783,19 @@ footer {
   background: url("../img/carbon-fibre.png") repeat;
   position: relative;
 }
+
 footer #find-info {
   border-bottom: 2px solid #00a7d2;
   padding-bottom: 10px;
   position: relative;
 }
+
 footer #find-info:after {
   content: "";
   display: block;
   clear: both;
 }
+
 footer #red-head {
   background-color: #b81900;
   color: #fff;
@@ -544,6 +803,7 @@ footer #red-head {
   border-bottom: 6px solid #666;
   border-top: 6px solid #666;
 }
+
 footer #red-head h1 {
   font-size: 30px;
   line-height: 40px;
@@ -551,14 +811,17 @@ footer #red-head h1 {
   margin-top: 0;
   padding-top: 20px;
 }
+
 footer #address {
   padding-top: 15px;
 }
+
 @media all and (min-width: 605px) {
   footer #address {
     padding-left: calc(25% - 150px);
   }
 }
+
 @media all and (min-width: 1280px) {
   footer #address {
     width: 33%;
@@ -566,41 +829,49 @@ footer #address {
     float: left;
   }
 }
+
 footer #address h2 {
   font-size: 22px;
   padding-left: 10px;
   text-align: center;
 }
+
 @media all and (min-width: 605px) {
   footer #address h2 {
     text-align: left;
     padding-left: 20px;
   }
 }
+
 footer #address p {
   margin-top: 5px;
   margin-bottom: 3px;
   font-size: 20px;
   text-align: center;
 }
+
 @media all and (min-width: 605px) {
   footer #address p {
     text-align: left;
     padding-left: 20px;
   }
 }
+
 footer h2,
 footer p {
   color: #fff;
 }
+
 footer #trading-hours {
   padding-bottom: 20px;
 }
+
 @media all and (min-width: 605px) {
   footer #trading-hours {
     padding-left: calc(25% - 150px);
   }
 }
+
 @media all and (min-width: 1280px) {
   footer #trading-hours {
     width: 33%;
@@ -608,35 +879,42 @@ footer #trading-hours {
     float: left;
   }
 }
+
 footer #trading-hours h2 {
   font-size: 22px;
   padding-left: 10px;
   text-align: center;
 }
+
 @media all and (min-width: 605px) {
   footer #trading-hours h2 {
     text-align: left;
     padding-left: 20px;
   }
 }
+
 footer #trading-hours p {
   margin-top: 5px;
   margin-bottom: 3px;
   font-size: 20px;
   text-align: center;
 }
+
 @media all and (min-width: 605px) {
   footer #trading-hours p {
     text-align: left;
     padding-left: 20px;
   }
 }
+
 footer #static-map {
   padding-bottom: 25px;
 }
+
 footer #static-map img {
   margin-left: calc(50% - 150px);
 }
+
 @media all and (min-width: 605px) {
   footer #static-map img {
     position: absolute;
@@ -644,17 +922,20 @@ footer #static-map img {
     right: calc(25% - 150px);
   }
 }
+
 @media all and (min-width: 1280px) {
   footer #static-map img {
     top: 40px;
     right: calc(33% - 360px);
   }
 }
+
 footer #footer-nav {
   width: 100%;
   margin: 0 auto;
   padding-left: 0;
 }
+
 footer #footer-nav ul {
   list-style: none;
   overflow: hidden;
@@ -662,21 +943,25 @@ footer #footer-nav ul {
   margin-top: 0;
   margin-bottom: 0px;
 }
+
 footer #footer-nav ul li {
   float: left;
   width: 50%;
   min-width: 150px;
 }
+
 @media all and (min-width: 605px) {
   footer #footer-nav ul li {
     width: 25%;
   }
 }
+
 @media all and (min-width: 1280px) {
   footer #footer-nav ul li {
     width: 12.5%;
   }
 }
+
 footer #footer-nav ul li a {
   text-align: center;
   font-size: 18px;
@@ -688,6 +973,7 @@ footer #footer-nav ul li a {
   border-bottom: 2px solid #00a7d2;
   transition: all 0.5s;
 }
+
 footer #footer-nav ul li a:hover {
   color: #b81900;
 }
@@ -702,8 +988,6 @@ footer #footer-nav ul li a:hover {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #4c4c4c 0%, #595959 12%, #666666 17%, #666666 19%, #666666 19%, #474747 29%, #2c2c2c 37%, black 57%, black 57%, #111111 71%, #1c1c1c 91%, #2b2b2b 95%, #131313 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
   /* IE6-9 */
 }
-
-/*# sourceMappingURL=styles.css.map */

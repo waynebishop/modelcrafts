@@ -169,6 +169,10 @@ main {
 	background-color: #eee;
 	padding-bottom: 20px;
 	margin-top: 0;
+	
+	.hidden {
+		display: none;
+	}
 
 	h1	{
 		font-size: 30px;
@@ -372,6 +376,7 @@ main {
 			max-width: 400px;
 			margin: 0 auto;
 			padding: 20px 20px 10px 20px;
+			position: relative;
 
 			// test
 			
@@ -426,6 +431,23 @@ main {
 					
 				}
 			}
+			
+			.feat-tag	{
+				background-color: lighten($brandColor1, 10%);
+				padding: 4px 10px;
+				color: #fff;
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				border-radius: 5px 0 5px 0;
+
+				@include bp-desktop	{
+					top: 35px;
+				} 
+
+
+			}
+
 			p {
 				font-size: 18px;
 				transition: all 0.5s;
@@ -525,6 +547,7 @@ main {
 			float: left;
 			padding: 5px;
 			box-sizing: border-box;
+			position: relative;
 
 
 			&#cat-product-d1,
@@ -556,14 +579,63 @@ main {
 
 			}
 
-			&#cart-section	{
-				background-color: orange;
+			.cat-tag	{
+				background-color: $brandColor2;
+				padding: 4px 10px;
+				color: #fff;
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				border-radius: 0 5px 0 5px;
+
+				@include bp-tablet	{
+					left: 0;
+					top: 0;
+
+				}
+
 			}
 
 		}
 	}
 
 	// For Product Pages
+
+	.mobile-subcat		{
+		max-width: 400px;
+		margin: 0 auto;
+		padding: 20px 20px 10px 20px;
+
+		@include bp-tablet 	{
+			display: none;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			box-sizing: border-box;
+			border: 5px solid #fff;
+			transition: all 0.5s;
+
+			&:hover {
+				border: 5px solid #fff;
+				
+			}
+		}
+
+		p 	{
+			font-size: 18px;
+			transition: all 0.5s;
+		}
+
+		h2	{
+			&:hover {
+				color: #333;
+			}
+		}
+
+
+	}
 
 
 	.subcat-section {
@@ -573,11 +645,6 @@ main {
 
 		p {
 			font-size: 16px;
-			transition: all 0.5s;
-
-			&:hover {
-				color: $brandColor2;
-			}
 		}
 
 		&:after	{
@@ -592,41 +659,35 @@ main {
 			clear: both;
 		}
 		
-		// Cart start
-
-		&#cart-section	{
-			background-color: orange;
-			min-height: 500px;
-
-
-		}
-
-
-
-
-		// Cart end
-
 		.subcat-product {
 		
 			max-width: 300px;
+			
 			margin: 0 auto;
 			padding: 20px 20px 10px 20px;
+			position: relative;
 
+			padding-bottom: 100px;
+
+			@include bp-tablet {
+			min-height: 470px;  	
+			display: inline-block;
+			width: 25%;
+			max-width: none; 
+			float: left;
+			padding: 5px 5px 100px 5px;
+			box-sizing: border-box;
+			
 			&#subcat-product-d1,
-				&#subcat-product-d2 {
+			&#subcat-product-d2 {
 				display: none;
 			}
 
-			@include bp-tablet {
-			display: inline-block;
-			width: 25%;
-			float: left;
-			padding: 5px;
-			box-sizing: border-box;
 			}	
 
 			@include bp-desktop{
 				width: 16.66%;
+				min-height: 450px; 
 
 				&#subcat-product-d1,
 				&#subcat-product-d2 {
@@ -643,14 +704,138 @@ main {
 				transition: all 0.5s;
 
 				&:hover {
-					border: 5px solid lighten($brandColor2, 30%);
+					border: 5px solid #fff;
 					
+				}
+			}
+
+			.subcat-tag	{
+				background-color: lighten($brandColor1, 10%);
+				padding: 4px 10px;
+				color: #fff;
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				border-radius: 0 5px 0 5px;
+
+				@include bp-tablet	{
+					left: 0;
+					top: 0;
+
 				}
 
 			}
 
-		}	
+			.price	{
+				font-size: 18px;
+				background-color: $priceColorBG;	
+				display: block;
+				width: 5em;
+				text-align: center;
+				line-height: 25px;
+				border: 2px solid #666;
+				border-radius: 5px;
 
+				position: absolute;
+				bottom: 70px;  
+
+
+
+			}
+
+			.add-to-cart	{
+				margin-top: 10px;
+				font-size: 14px;
+				background-color: $addToCartBG;	
+				display: block;
+				width: 7em;
+				text-align: center;
+				line-height: 25px;
+				border: 2px solid $addToCartBD;
+				border-radius: 5px;
+				
+				position: absolute;
+				bottom: 30px;  
+			}
+
+		}
+
+		// SHOPPING CART START 
+
+		&#cart-section	{
+			
+			min-height: 500px;
+
+			p {
+				font-size: 18px;
+				color: #333;
+
+				&:hover {
+					color: #333;
+				}
+			}
+
+			table {
+				border: 4px solid #666; 
+				border-spacing: 5px;
+				margin: 0 auto;
+				
+				td 	{
+					min-width: 8em;
+
+				} 
+
+				tr 	{
+					height: 30px;
+
+					
+					&:nth-child(odd) {
+						background-color: #ccc;
+					}
+				
+
+					&:last-child {
+						background-color: $flat-blue-1;
+					} 
+				} 
+
+				th {
+					background-color: $flat-blue-1;
+				}
+				
+			}
+		
+			#to-checkout,
+			#clear-cart	{
+				min-width: 14em;
+				font-size: 1em;
+				line-height: 1.5em;
+				border-radius: 10px;
+				margin-left: calc(50% - 7em);
+				margin-top: 2em;
+				transition: all 0.5s;
+			}
+
+			#to-checkout	{
+				background-color: $flat-purple-1;
+
+				&:hover	{
+					background-color: $flat-purple-2;
+				}
+			}
+
+			#clear-cart	{
+				background-color: $flat-orange-1;
+
+				&:hover	{
+					background-color: $flat-orange-3;
+				}
+			}
+
+		}
+
+
+		// SHOPPING CART END
 	}
 
 }
