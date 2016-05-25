@@ -4,6 +4,7 @@
 
 var freightPriceList = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90];
 var freightCost;
+var freightDest;
 
 
 
@@ -19,7 +20,9 @@ if( localStorage.getItem('country') ) {
 			// Select this option
 			selectElement[i].setAttribute('selected', 'selected');
 
+			freightDest = selectElement[i].value;
 
+			console.log(freightDest);
 
 			console.log("index" + i);
 			freightCost = freightPriceList[i];
@@ -29,6 +32,7 @@ if( localStorage.getItem('country') ) {
 	}
 } else {
 	freightCost = 0;
+	freightDest = "*Please select country!";
 }
 
 
@@ -37,6 +41,7 @@ if( localStorage.getItem('country') ) {
 document.querySelector('#country').onchange = function(){
 
 	localStorage.setItem('country', this.value);
+	
 
 }
 
@@ -192,7 +197,7 @@ function showCartTable() {
 	var freightTextTD = document.createElement('td');
 	var freightCostTD = document.createElement('td');
 
-	freightTextTD.innerHTML = 'Freight';
+	freightTextTD.innerHTML = 'Freight to ' + freightDest;
 
 	freightCostTD.innerHTML = '$' + freightCost;
 
