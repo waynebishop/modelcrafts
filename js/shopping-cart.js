@@ -1,3 +1,53 @@
+
+
+// FREIGHT DESTINATION SECTION
+
+var freightPriceList = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90];
+var freightCost;
+
+
+
+// Has this user picked a freight destination country?
+if( localStorage.getItem('country') ) {
+	
+	// Loop over each option
+	var selectElement = document.querySelector('#country'); 
+	for(var i=0; i<selectElement.length; i++) {
+		
+		// Is this the option the user chose?
+		if( localStorage.getItem('country') == selectElement[i].value ) {
+			// Select this option
+			selectElement[i].setAttribute('selected', 'selected');
+
+
+
+			console.log("index" + i);
+			freightCost = freightPriceList[i];
+			console.log("freight section" + freightCost);
+
+		} 
+	}
+} else {
+	freightCost = 0;
+}
+
+
+// Listen for changes in the country options
+
+document.querySelector('#country').onchange = function(){
+
+	localStorage.setItem('country', this.value);
+
+}
+
+
+
+
+
+
+
+// CART COUNT AND TABLE SECTION
+
 // If a shopping cart does not exist in localstorage
 
 if( localStorage.getItem('cart') == null ) {
@@ -132,17 +182,17 @@ function showCartTable() {
 	}
 
 
-	// Freight tablke row and data
+	// Freight table row and data
 
-	var freightCost = 10;
+	// var freightCost = 10;
 
-	console.log(freightCost);
+	console.log("table section" + freightCost);
 
 	var freightRow = document.createElement('tr');
 	var freightTextTD = document.createElement('td');
 	var freightCostTD = document.createElement('td');
 
-	freightTextTD.innerHTML = 'Freight (NZ only)';
+	freightTextTD.innerHTML = 'Freight';
 
 	freightCostTD.innerHTML = '$' + freightCost;
 
