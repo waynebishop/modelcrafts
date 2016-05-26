@@ -602,7 +602,7 @@ main .subcat-section .subcat-product {
     padding: 5px 5px 100px 5px;
     box-sizing: border-box;
   }
-  main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2 {
+  main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2, main .subcat-section .subcat-product#subcat-product-d3, main .subcat-section .subcat-product#subcat-product-d4, main .subcat-section .subcat-product#subcat-product-d5, main .subcat-section .subcat-product#subcat-product-d6, main .subcat-section .subcat-product#subcat-product-d7, main .subcat-section .subcat-product#subcat-product-d8, main .subcat-section .subcat-product#subcat-product-d9, main .subcat-section .subcat-product#subcat-product-d10, main .subcat-section .subcat-product#subcat-product-d11, main .subcat-section .subcat-product#subcat-product-d12 {
     display: none;
   }
 }
@@ -612,7 +612,7 @@ main .subcat-section .subcat-product {
     width: 16.66%;
     min-height: 450px;
   }
-  main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2 {
+  main .subcat-section .subcat-product#subcat-product-d1, main .subcat-section .subcat-product#subcat-product-d2, main .subcat-section .subcat-product#subcat-product-d3, main .subcat-section .subcat-product#subcat-product-d4, main .subcat-section .subcat-product#subcat-product-d5, main .subcat-section .subcat-product#subcat-product-d6, main .subcat-section .subcat-product#subcat-product-d7, main .subcat-section .subcat-product#subcat-product-d8, main .subcat-section .subcat-product#subcat-product-d9, main .subcat-section .subcat-product#subcat-product-d10, main .subcat-section .subcat-product#subcat-product-d11, main .subcat-section .subcat-product#subcat-product-d12 {
     display: inline-block;
   }
 }
