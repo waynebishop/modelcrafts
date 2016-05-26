@@ -491,15 +491,31 @@ main {
 
 
 			&#cat-product-d1,
-			&#cat-product-d2 {
-			display: none;
+			&#cat-product-d2,
+			&#cat-product-d3,
+			&#cat-product-d4,
+			&#cat-product-d5,
+			&#cat-product-d6,
+			&#cat-product-d7,
+			&#cat-product-d8,
+			&#cat-product-d9,
+			&#cat-product-d10 {
+				display: none;
 			}
 
 			@include bp-desktop{
 				width: 16.66%;
 
 				&#cat-product-d1,
-				&#cat-product-d2 {
+				&#cat-product-d2,
+				&#cat-product-d3,
+				&#cat-product-d4,
+				&#cat-product-d5,
+				&#cat-product-d6,
+				&#cat-product-d7,
+				&#cat-product-d8,
+				&#cat-product-d9,
+				&#cat-product-d10 {
 				display: inline-block;
 				}
 			}

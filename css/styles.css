@@ -488,7 +488,7 @@ main .cat-section .cat-product {
   position: relative;
 }
 
-main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#cat-product-d2 {
+main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#cat-product-d2, main .cat-section .cat-product#cat-product-d3, main .cat-section .cat-product#cat-product-d4, main .cat-section .cat-product#cat-product-d5, main .cat-section .cat-product#cat-product-d6, main .cat-section .cat-product#cat-product-d7, main .cat-section .cat-product#cat-product-d8, main .cat-section .cat-product#cat-product-d9, main .cat-section .cat-product#cat-product-d10 {
   display: none;
 }
 
@@ -496,7 +496,7 @@ main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#ca
   main .cat-section .cat-product {
     width: 16.66%;
   }
-  main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#cat-product-d2 {
+  main .cat-section .cat-product#cat-product-d1, main .cat-section .cat-product#cat-product-d2, main .cat-section .cat-product#cat-product-d3, main .cat-section .cat-product#cat-product-d4, main .cat-section .cat-product#cat-product-d5, main .cat-section .cat-product#cat-product-d6, main .cat-section .cat-product#cat-product-d7, main .cat-section .cat-product#cat-product-d8, main .cat-section .cat-product#cat-product-d9, main .cat-section .cat-product#cat-product-d10 {
     display: inline-block;
   }
 }
