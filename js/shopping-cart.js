@@ -31,9 +31,10 @@ if( localStorage.getItem('country') ) {
 		} 
 	}
 } else {
-	freightCost = 0;
-	freightDest = "*Please select country!";
+	freightCost = 999;
+	freightDest = "*Please select country.";
 }
+
 
 
 // Listen for changes in the country options
@@ -42,14 +43,9 @@ document.querySelector('#country').onchange = function(){
 
 	localStorage.setItem('country', this.value);
 	
+	alert("Please refresh the page to update cart details");
 
 }
-
-
-
-
-
-
 
 // CART COUNT AND TABLE SECTION
 

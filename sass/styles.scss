@@ -775,6 +775,13 @@ main {
 				}
 			}
 
+			label	{
+				font-size: 18px;
+				color: lighten($brandColor1, 10%);
+				padding-left: calc(50% - 270px);
+
+			}
+			
 			table {
 				border: 4px solid #666; 
 				border-spacing: 5px;

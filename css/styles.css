@@ -721,6 +721,12 @@ main .subcat-section#cart-section p:hover {
   color: #333;
 }
 
+main .subcat-section#cart-section label {
+  font-size: 18px;
+  color: #eb2000;
+  padding-left: calc(50% - 270px);
+}
+
 main .subcat-section#cart-section table {
   border: 4px solid #666;
   border-spacing: 5px;
