@@ -1,11 +1,6 @@
 @import 'colors';
 @import 'mixins';
 
-
-
-
-
-
 body {
 	font-family: Helvetica, Arial;
 	margin: 0;
@@ -157,7 +152,6 @@ nav {
 	}
 }
 
-
 // Start of Main
 
 main {
@@ -204,9 +198,6 @@ main {
 		text-decoration: none;
 		color: #999;
 	}
-
-
-
 
 	#home-feature {
 		
@@ -270,44 +261,6 @@ main {
 		}
 	}
 
-	
-	#puzzle-feature {
-		
-		width: 100%;
-		max-width: 600px;
-		margin: 0 auto;
-		padding: 0;
-			
-		p {
-			margin-bottom: 0;
-			padding: 20px 10px 20px 10px;
-		}
-
-		img {
-			width: 100%;
-			height: auto;
-			box-sizing: border-box;
-			border-top: 5px solid #fff;
-			border-bottom: 5px solid #fff;
-			transition: all 0.5s;
-
-			&:hover {
-				border-top: 5px solid lighten($brandColor2, 30%);
-				border-bottom: 5px solid lighten($brandColor2, 30%);
-			}
-
-			@include bp-tablet {
-				border: 5px solid #fff;
-
-				&:hover {
-				border: 5px solid lighten($brandColor2, 30%);
-				}
-			}
-		}
-	}
-	
-
-
 	#video-feature {
 		
 		width: 100%;
@@ -343,14 +296,11 @@ main {
 		}
 	}
 
-
-
 	#top-features:after	{
 		content: "";
 		display: block;
 		clear: both;
 	}
-
 	
 	#subset-features	{
 
@@ -378,8 +328,6 @@ main {
 			padding: 20px 20px 10px 20px;
 			position: relative;
 
-			// test
-			
 			@include bp-tablet {
 				max-width: 40%;
 
@@ -416,9 +364,6 @@ main {
 
 			}
 
-
-			// test
-
 			img {
 				width: 100%;
 				height: auto;
@@ -444,8 +389,6 @@ main {
 				@include bp-desktop	{
 					top: 35px;
 				} 
-
-
 			}
 
 			p {
@@ -481,9 +424,6 @@ main {
 		
 		}
 	}
-
-
-
 
 	.mobile-cat		{
 		max-width: 400px;
@@ -574,9 +514,7 @@ main {
 
 				&:hover {
 					border: 5px solid lighten($brandColor2, 30%);
-					
 				}
-
 			}
 
 			.cat-tag	{
@@ -591,11 +529,8 @@ main {
 				@include bp-tablet	{
 					left: 0;
 					top: 0;
-
 				}
-
 			}
-
 		}
 	}
 
@@ -619,7 +554,6 @@ main {
 
 			&:hover {
 				border: 5px solid #fff;
-				
 			}
 		}
 
@@ -633,10 +567,7 @@ main {
 				color: #333;
 			}
 		}
-
-
 	}
-
 
 	.subcat-section {
 		
@@ -678,10 +609,10 @@ main {
 			padding: 5px 5px 100px 5px;
 			box-sizing: border-box;
 			
-			&#subcat-product-d1,
-			&#subcat-product-d2 {
-				display: none;
-			}
+				&#subcat-product-d1,
+				&#subcat-product-d2 {
+					display: none;
+				}
 
 			}	
 
@@ -705,7 +636,6 @@ main {
 
 				&:hover {
 					border: 5px solid #fff;
-					
 				}
 			}
 
@@ -721,9 +651,7 @@ main {
 				@include bp-tablet	{
 					left: 0;
 					top: 0;
-
 				}
-
 			}
 
 			.price	{
@@ -738,9 +666,6 @@ main {
 
 				position: absolute;
 				bottom: 70px;  
-
-
-
 			}
 
 			.add-to-cart	{
@@ -757,7 +682,6 @@ main {
 				position: absolute;
 				bottom: 30px;  
 			}
-
 		}
 
 		// SHOPPING CART START 
@@ -789,7 +713,6 @@ main {
 				
 				td 	{
 					min-width: 8em;
-
 				} 
 
 				tr 	{
@@ -840,25 +763,11 @@ main {
 			}
 
 		}
-
-
 		// SHOPPING CART END
 	}
 
 }
-
-
-
-
-
-
-
 // End of Main
-
-
-
-
-
 
 // Footer code here
 
@@ -1049,24 +958,6 @@ footer {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Pure CSS goes here
 

@@ -262,41 +262,6 @@ main #home-feature img:hover {
   }
 }
 
-main #puzzle-feature {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-main #puzzle-feature p {
-  margin-bottom: 0;
-  padding: 20px 10px 20px 10px;
-}
-
-main #puzzle-feature img {
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
-  transition: all 0.5s;
-}
-
-main #puzzle-feature img:hover {
-  border-top: 5px solid #6ce1ff;
-  border-bottom: 5px solid #6ce1ff;
-}
-
-@media all and (min-width: 605px) {
-  main #puzzle-feature img {
-    border: 5px solid #fff;
-  }
-  main #puzzle-feature img:hover {
-    border: 5px solid #6ce1ff;
-  }
-}
-
 main #video-feature {
   width: 100%;
   max-width: 854px;

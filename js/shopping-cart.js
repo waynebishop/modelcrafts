@@ -1,12 +1,8 @@
-
-
 // FREIGHT DESTINATION SECTION
 
 var freightPriceList = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90];
 var freightCost;
 var freightDest;
-
-
 
 // Has this user picked a freight destination country?
 if( localStorage.getItem('country') ) {
@@ -27,15 +23,12 @@ if( localStorage.getItem('country') ) {
 			console.log("index" + i);
 			freightCost = freightPriceList[i];
 			console.log("freight section" + freightCost);
-
 		} 
 	}
 } else {
 	freightCost = 999;
 	freightDest = "*Please select country.";
 }
-
-
 
 // Listen for changes in the country options
 
@@ -50,7 +43,6 @@ document.querySelector('#country').onchange = function(){
 // CART COUNT AND TABLE SECTION
 
 // If a shopping cart does not exist in localstorage
-
 if( localStorage.getItem('cart') == null ) {
 	//Create the cart with empty array if cart is null 
 	localStorage.setItem('cart', JSON.stringify( [] )); 
@@ -65,14 +57,13 @@ console.log( cart );
 updateCartDisplay();
 
 
-//               Find All the .add-to-cart buttons
+//  Find All the .add-to-cart buttons
 var addToCartButtons = document.querySelectorAll('.add-to-cart');
 
 // Add click event listeners to them all
 for(var i=0; i<addToCartButtons.length; i++) {
 
 	addToCartButtons[i].onclick = addToCart;
-
 }
 
 function addToCart()	{
@@ -234,7 +225,6 @@ function showCartTable() {
 
 	// Add the table to the screeen
 	container.appendChild(table);
-
 }
 
 
