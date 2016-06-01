@@ -706,7 +706,6 @@ main {
 			}
 
 			.add-to-cart	{
-				@include experimental(appearance, none);
 				margin-top: 10px;
 				font-size: 14px;
 				background-color: $addToCartBG;	
