@@ -660,6 +660,7 @@ main .subcat-section .subcat-product .price {
 }
 
 main .subcat-section .subcat-product .add-to-cart {
+  white-space: nowrap;
   margin-top: 10px;
   font-size: 14px;
   background-color: #ffffff;
