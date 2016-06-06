@@ -36,8 +36,29 @@ document.querySelector('#country').onchange = function(){
 
 	localStorage.setItem('country', this.value);
 	
-	alert("Please refresh the page to update cart details");
+	// Work out new freightDest and FreightCost and update Cart table
 
+	if( localStorage.getItem('country') ) {
+	
+		// Loop over each option
+		var selectElement = document.querySelector('#country'); 
+		for(var i=0; i<selectElement.length; i++) {
+			
+			// Is this the option the user chose?
+			if( localStorage.getItem('country') == selectElement[i].value ) {
+				
+				freightDest = selectElement[i].value;
+				
+				freightCost = freightPriceList[i];
+				
+				updateCartDisplay();
+			} 
+		}	
+	} else {
+				freightCost = 999;
+				freightDest = "*Please select country.";
+				updateCartDisplay();
+	} 
 }
 
 // CART COUNT AND TABLE SECTION
