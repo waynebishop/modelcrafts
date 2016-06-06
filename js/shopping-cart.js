@@ -47,6 +47,8 @@ document.querySelector('#country').onchange = function(){
 			// Is this the option the user chose?
 			if( localStorage.getItem('country') == selectElement[i].value ) {
 				
+				selectElement[i].setAttribute('selected', 'selected');	
+
 				freightDest = selectElement[i].value;
 				
 				freightCost = freightPriceList[i];
